@@ -1,0 +1,515 @@
+<!-- Toolbar -->
+<!-- <div fxLayout="row" class="toolbar" role="banner">
+  <img
+    width="40"
+    alt="Angular Logo"
+    src="img/1.jpg"
+  />
+    
+   <span>Welcome</span>
+</div>
+<div class="steps" fxLayout="row" fxLayoutAlign="center" color="black">
+        <hr>
+    </div>
+
+<div>
+<p>my-component works!</p>
+    <div fxLayout="row" fxLayoutAlign = "space-around center" color="black">
+    <h1>Hello</h1>
+    <h2>Hi</h2>
+    <mat-slider></mat-slider>
+    <mat-card></mat-card>
+    <mat-card></mat-card>
+</div>
+
+-->
+
+<mat-toolbar class="toolbar">
+    <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>-->
+    <!-- <span>My App</span> -->
+    <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><defs><style>.cls-1{fill:#ec6493;}.cls-2{fill:#f6bcd0;}</style></defs><title>Logo a color</title><path class="cls-1" d="M349.29,365.44a262,262,0,0,0-86.59-14.63C117.57,350.81-.09,468.46-.09,613.54V876.27H262.7c145.07,0,262.73-117.61,262.73-262.73C525.43,498.82,451.83,401.23,349.29,365.44ZM262.7,797H79.22V613.54c0-101.29,82.14-183.48,183.48-183.48s183.47,82.19,183.47,183.48S364,797,262.7,797Z"/><path class="cls-1" d="M1420,478.13V825.65q0,105.45-52.35,155.93T1211.32,1032a374.24,374.24,0,0,1-108.51-15.56q-51.6-15.56-83.46-44.39l34.9-56.15q28.07,24.28,69.43,38.32a263.68,263.68,0,0,0,85.36,14q70.56,0,104.33-33.39t33.77-101.67V801.37A161,161,0,0,1,1283.78,848q-37.56,15.57-81.57,15.56-57.68,0-104.33-24.66t-73.22-69q-26.57-44.39-26.56-101.3t26.56-101.29q26.55-44.4,73.22-68.67t104.33-24.28q45.52,0,84.61,16.69t64.11,49.32V478.13Zm-138.47,305a123.45,123.45,0,0,0,49.31-46.67q17.84-30,17.84-67.91,0-58.43-38.7-94.47t-99.4-36q-61.47,0-100.16,36t-38.7,94.47q0,37.95,17.84,67.91a123.26,123.26,0,0,0,49.31,46.67q31.49,16.7,71.71,16.69Q1250,799.85,1281.51,783.16Z"/><path class="cls-1" d="M1603.59,858.28q-47.8-26.55-74.74-73.23T1501.91,679.2q0-59.18,26.94-105.84t74.74-72.85q47.81-26.17,107.75-26.17t107.36,26.17a190.84,190.84,0,0,1,74.37,72.85Q1920,620,1920,679.2t-26.93,105.85a193.38,193.38,0,0,1-74.37,73.23q-47.42,26.57-107.36,26.55T1603.59,858.28Zm177.17-55q30.73-17.82,48.19-50.08t17.45-74q0-41.72-17.45-74t-48.19-49.7q-30.72-17.44-69.42-17.45t-69.43,17.45q-30.73,17.47-48.56,49.7t-17.83,74q0,41.74,17.83,74t48.56,50.08q30.73,17.84,69.43,17.83T1780.76,803.27Z"/><circle class="cls-1" cx="637.64" cy="800.92" r="75.35"/><path class="cls-1" d="M392.37,240.44a203.42,203.42,0,0,1-11.47,67.78,194.87,194.87,0,0,1-31.61,57.22,264.2,264.2,0,0,0-124.51-11.91l-.54.05c52-8,91.93-56,91.93-114,0-31.82-12-60.65-31.44-81.48s-46.24-33.73-75.89-33.73V48.21C307.9,48.21,392.37,134.26,392.37,240.44Z"/><path class="cls-2" d="M208.84,48.21v76.2H131.93A122.35,122.35,0,0,0,41,165L6.76,203.18a3.93,3.93,0,0,1-6.85-2.61V167.93c0-54.29,34.32-95,84.75-112,16-5.44,33.07-7.67,50-7.67Z"/></svg>
+    <!-- <img src="/assets/img/Logo a color@300x.png" alt="Logo"> -->
+    <!-- <span class="spacer-left"></span> -->
+
+    <!-- Right -->
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+    <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+   <mat-icon>share</mat-icon>
+ </button>-->
+    <button mat-button color="primary">Crear cuenta</button>
+    <button mat-button color="primary" class="spacer-right">Iniciar sesion</button>
+</mat-toolbar>
+
+<!-- Steps -->
+<!-- <div fxLayout="row" class="spacer-left spacer-right">
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+    <div style="width: 50px; height:10px; background-color:blueviolet;" fxAlign="bottom">
+    </div>
+</div> -->
+<mat-horizontal-stepper #stepper class="spacer-left spacer-right">
+    <mat-step label="Elige tu experiencia">
+        <!-- <form [formGroup]="firstFormGroup">
+            <ng-template matStepLabel>Fill out your name</ng-template>
+            <mat-form-field>
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+            </mat-form-field>
+            <div>
+                <button mat-button matStepperNext>Next</button>
+            </div>
+        </form> -->
+    </mat-step>
+    <mat-step label="Realizar reserva">
+        <!-- <form [formGroup]="secondFormGroup"> -->
+        <!-- <mat-form-field>
+                <mat-label>Address</mat-label>
+                <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY" required>
+            </mat-form-field> -->
+        <!-- <div>
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button matStepperNext>Next</button>
+            </div> -->
+        <!-- </form> -->
+    </mat-step>
+    <mat-step label="Pagar reserva">
+        <!-- <ng-template matStepLabel>Done</ng-template>
+        <p>You are now done.</p> -->
+        <!-- <div>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button (click)="stepper.reset()">Reset</button>
+        </div> -->
+    </mat-step>
+</mat-horizontal-stepper>
+
+
+<div id="image-layout" fxLayout="row" fxLayoutAlign="start" fxLayoutGap='20px grid' class="padding-left-right">
+    <mat-card style="margin-right: 1%;" fxFlex="80%">
+        <mat-card-content>
+            <div fxFlex="100%">
+                <!-- calc(100% - 10%) -->
+                <div fxLayout="row " fxLayoutAlign="spaces-between  start" fxLayoutGap="0px grid " style="height: 312px; ">
+                    <img fxFlex="70% " src="assets/img/img1.jpg " alt="1 " id="left-img">
+                    <div fxFlex="30% " fxLayout="column " fxLayoutAlign="stretch stretch" fxLayoutGap="0px grid" style="height: 312px; width: 100%;">
+                        <img fxFlex="50% " src="assets/img/img1.jpg " alt="2 " class="img-class-top ">
+                        <div fxFlex="50% ">
+                            <img src="assets/img/img1.jpg " alt="3 " class="img-class-bottom ">
+                            <!-- <button style="background-color: #ffffff;
+                            border-radius: 18px;
+                            box-shadow: inset 3px 3px 6px rgba(0, 0, 0, .16);
+                            width: 70%;
+                            height: 15%;
+                            overflow: hidden;">
+                                Ver mas fotos
+                            </button> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div id="initial-data">
+                    <p style="font-size: 10px;
+                    font-weight: 500;
+                    letter-spacing: 1.5px;
+                    color: rgba(66,66,66,.87);">
+                        Circuito
+                    </p>
+                    <h1 style="font-size: 34px;
+                    font-weight: 700;
+                    color: rgba(0,0,0,.87);">Calor y Cafe</h1>
+
+                    <div fxLayout="row wrap " fxLayoutAlign="start center " fxLayoutGap="10px grid ">
+                        <div fxFlex="50% ">
+                            <div fxFlexLayout="row">
+                                <p fxFlex="50%" class="text-left">Tema principal: </p>
+                                <p fxFlex="50%" class="text-right">Ciudad, Arte y cultura</p>
+
+                            </div>
+
+
+                        </div>
+                        <div fxFlex="50% ">
+                            <div fxFlexLayout="row">
+                                <p fxFlex="40%" class="text-left">Otros temas:</p>
+                                <p fxFlex="60%" fxLayoutAlign="start start" class="text-right">Naturaleza, Entretenimiento, Comida</p>
+
+                            </div>
+                        </div>
+
+                        <div fxFlex="100% ">
+                            <div fxFlexLayout="row">
+                                <p class="text-left">Idiomas: <b class="text-right">Ruso, Inglés, Español y Francés</b> </p>
+
+
+                            </div>
+
+
+                        </div>
+                        <!-- <div fxFlex="50% ">
+
+                </div> -->
+                        <div fxFlex="20% ">
+                            EDAD MÍNIMA : 2 AÑOS
+
+                        </div>
+                        <div fxFlex="80% ">
+                            DURACIÓN : 15 DÍAS / 14 NOCHES
+
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div id="destiny ">
+                    <h2>
+                        Destinos
+                    </h2>
+                    <p>
+                        La Habana / Viñales / Guamá / Cienfuegos / Trinidad / Camagüey / Santiago de Cuba / Baracoa
+                    </p>
+                </div>
+                <hr>
+
+                <div id="what-to-do ">
+                    <h2>¿Qué haremos?</h2>
+                    <p>
+                        orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit, sed diam nonummy nibh euismod tincidunt utorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                        nostrud exerci tation Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt utorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                        dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt utorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.
+                    </p>
+                </div>
+
+                <hr>
+                <div id="what-includes ">
+                    <h2>¿Qué incluye?</h2>
+                    <div fxLayout="flex wrap ">
+                        <mat-icon aria-hidden="false " aria-label="Example home icon ">home</mat-icon>
+                        <b>Servicios Generales</b>
+                    </div>
+                    <ul>
+                        <li>
+                            - Recorrido en autocar con guía en español y portugués, seguro básico de viaje y desayuno tipo buffet.
+                        </li>
+                    </ul>
+
+                    <div fxLayout="flex wrap ">
+                        <mat-icon aria-hidden="false " aria-label="Example home icon ">home</mat-icon>
+                        <b>Transporte</b>
+                    </div>
+                    <div>
+                        - Incluye traslado de llegada
+
+                    </div>
+                    <div>
+                        - Barco por el Valle del Rhin, Por el lago Traunsee , Tronchetto / Plaza de San Marcos / Tronchetto
+                    </div>
+                    <div>
+                        - Visita panorámica en: Madrid, Paris, Londres, Amsterdam, Bruselas, Viena, Venecia, Asis, Roma, Florencia, Barcelona
+                    </div>
+                </div>
+
+                <hr>
+                <div>
+                    <h2>
+                        Destinos
+                    </h2>
+                    <p>
+                        La Habana / Viñales / Guamá / Cienfuegos / Trinidad / Camagüey / Santiago de Cuba / Baracoa
+                    </p>
+                </div>
+
+
+            </div>
+        </mat-card-content>
+    </mat-card>
+
+    <!-- Right Column -->
+    <mat-card fxFLex="20% ">
+        <mat-card-content style="height: 150px; ">
+            <div fxLayout="column ">
+                <h3 style="color: gray; ">
+                    Busqueda
+                </h3>
+                <button style="height:50px ">Search</button>
+                <h2>
+                    Resumen de la reserva
+                </h2>
+                <div fxLayout="row wrap " fxLayoutAlign="start center " fxLayoutGap="10px grid ">
+                    <div fxFlex="50% ">
+                        Fecha de inicio
+                    </div>
+                    <div fxFlex="50% ">
+                        <b>12 de Enero del 2021</b>
+                    </div>
+                    <div fxFlex="50% "></div>
+                    <div fxFlex="50% ">15 DÍAS / 14 NOCHES
+
+                    </div>
+                    <div fxFlex="100% ">
+                        <hr>
+
+                    </div>
+
+
+
+                </div>
+
+
+                <div fxLayout="row wrap " fxLayoutAlign="start center " fxLayoutGap="10px grid ">
+                    <div fxFlex="50% ">
+                        <h5>
+                            Calor y cafe
+                        </h5>
+                    </div>
+
+                    <div fxFlex="50% ">
+                        <h5>
+                            Opción 2
+                        </h5>
+                    </div>
+
+                    <div fxFlex="100% ">
+                        <hr>
+
+                    </div>
+                </div>
+
+                <div fxLayout="row wrap " fxLayoutAlign="start center " fxLayoutGap="10px grid ">
+                    <div fxFlex="50% ">
+                        <h5>
+                            Grupo 1
+                        </h5>
+                    </div>
+
+                    <div fxFlex="50% ">
+                        <h5>
+                            2 Adultos
+                        </h5>
+                    </div>
+
+                    <div fxFlex="100% ">
+                        <hr>
+
+                    </div>
+                </div>
+            </div>
+
+        </mat-card-content>
+    </mat-card>
+</div>
+
+<!-- Opciones -->
+<div id="options-layout " class="padding-left-right ">
+
+    <mat-card clas="example-card ">
+        <mat-card-content>
+            <h1>
+                Opciones de Reserva
+            </h1>
+            <h3>
+                Fechas de inicio disponibles
+            </h3>
+            <p>Algo</p>
+            <mat-card>
+                <mat-card-content>
+                    <div fxLayout="row wrap " fxLayoutAlign="start center " fxLayoutGap="10px grid ">
+                        <div fxFlex="70% ">
+                            <h4>Opcion 1</h4>
+                        </div>
+                        <div fxFlex="20% ">
+                            <label>Ver mas detalles</label>
+                            <button mat-icon-button aria-label="Example icon button with a vertical three dot icon ">
+                                <mat-icon>more_vert</mat-icon>
+                              </button>
+                        </div>
+                    </div>
+
+                    <!-- Dias -->
+                    <mat-horizontal-stepper #stepper class="spacer-left spacer-right ">
+                        <mat-step label="Dia 1 ">
+                            <!-- <form [formGroup]="firstFormGroup ">
+                                <ng-template matStepLabel>Fill out your name</ng-template>
+                                <mat-form-field>
+                                    <mat-label>Name</mat-label>
+                                    <input matInput placeholder="Last name, First name " formControlName="firstCtrl " required>
+                                </mat-form-field>
+                                <div>
+                                    <button mat-button matStepperNext>Next</button>
+                                </div>
+                            </form> -->
+                        </mat-step>
+                        <mat-step label="Dia 2 ">
+                            <!-- <form [formGroup]="secondFormGroup "> -->
+                            <!-- <mat-form-field>
+                                    <mat-label>Address</mat-label>
+                                    <input matInput formControlName="secondCtrl " placeholder="Ex. 1 Main St, New York, NY " required>
+                                </mat-form-field> -->
+                            <!-- <div>
+                                    <button mat-button matStepperPrevious>Back</button>
+                                    <button mat-button matStepperNext>Next</button>
+                                </div> -->
+                            <!-- </form> -->
+                        </mat-step>
+                        <mat-step label="Dia 3 ">
+                            <!-- <ng-template matStepLabel>Done</ng-template>
+                            <p>You are now done.</p> -->
+                            <!-- <div>
+                                <button mat-button matStepperPrevious>Back</button>
+                                <button mat-button (click)="stepper.reset() ">Reset</button>
+                            </div> -->
+                        </mat-step>
+                    </mat-horizontal-stepper>
+
+                    <!-- Componentes de opciones -->
+                    <div>
+                        <mat-card>
+                            <mat-card-content>
+                                <div>
+                                    <div fxLayout="row wrap " fxLayoutAlign="start center " fxLayoutGap="10px grid ">
+                                        <img fxFlex="20% " src="assets/img/img1.jpg " alt="1 " style=" width: 100%; height: 100%; object-fit:cover; object-position: center; border-radius: 8px; margin: 1%; ">
+                                        <div fxFlex="70% ">
+                                            <label>Ver mas detalles</label>
+
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim ven</p>
+                                </div>
+                            </mat-card-content>
+                        </mat-card>
+                    </div>
+                    <!-- Componentes de opciones -->
+
+                    <div fxLayout="row wrap " fxLayoutAlign="end center ">
+                        <div fxFlex="10% ">Total del viaje </div>
+                        <div fxFlex="20% ">
+                            <h1>$200CUP</h1>
+                        </div>
+                        <div fxFlex="20% "><button style="border-radius: 8px; ">Seleccionar</button></div>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </mat-card-content>
+    </mat-card>
+</div>
+
+<!-- Opiniones -->
+<div id="opinion-layout " class="padding-left-right ">
+    <mat-card>
+        <mat-card-content>
+            <h2>
+                Opiniones
+            </h2>
+            <div fxLayout="row wrap " fxLayoutAlign="start center " fxLayoutGap="10px grid ">
+                <button fxFlex="10% " mat-icon-button aria-label="Example icon button with a vertical three dot icon ">
+                    <mat-icon>more_vert</mat-icon>
+                  </button>
+                <label fxFlex="60% ">
+                    4.5/5
+                </label>
+
+                <div>
+                    <h5 fxFlex="30% ">
+
+                        Excelente</h5>
+
+                </div>
+                <hr>
+
+                <!-- Componentes -->
+                <!-- <div fxFLex="30% "> -->
+                <div fxFlex="40% " fxLayout="row wrap " fxLayoutAlign="start center " fxLayoutGap="10px grid ">
+                    <img fxFlex="30% " id=" resp-img " src="assets/img/img1.jpg " alt=" ">
+                    <div fxFlex="70% " fxLayout="column wrap ">
+                        <label>Amy Stephani Smith</label>
+                        <div>
+                            <button fxFlex="10% " mat-icon-button aria-label="Example icon button with a vertical three dot icon ">
+                                <mat-icon aria-hidden="false " aria-label="Example home icon ">home</mat-icon>
+                              </button>
+                            <p>MARZO 2020
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+                <div fxFlex="60% ">
+                    <p>
+                        orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit, sed diam nonummy nibh euismod tincidunt ut
+                    </p>
+                </div>
+
+                <!-- Ver todas las opiniones -->
+                <div fxLayout="row ">
+                    <button fxLayoutAlign="end center ">Ver todas las opiniones</button>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>
+
+<!-- Otras Ofertas -->
+<div id="offers-layout " class="padding-left-right ">
+    <mat-card>
+        <mat-card-content>
+            <h2>Descrubre otras ofertas</h2>
+            <div fxLayout="row wrap " fxLayoutAlign="start center " fxLayoutGap="10px grid ">
+                <mat-card>
+                    <mat-card-content>
+                        <div fxLayout="column wrap " fxLayoutAlign="start start " fxLayoutGap="10px grid ">
+                            <img fxFlex="20% " src="assets/img/img1.jpg " alt="1 " style=" width: 100%; height: 100%; object-fit:cover; object-position: center; border-radius: 8px; margin: 1%; ">
+                            <h4>Calor y cafe</h4>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>
+
+<!-- Profile -->
+<!-- <div class="spacer-left spacer-right pictures-container ">
+    <div fxLayout=row>
+        <div fxLayout="row " color='primary' fxFlex="70 ">
+            <mat-card class="example-card ">
+                <mat-card-content>
+                    <div fxLayout="row ">
+                        <div fxFlex="80% ">
+                            <img mat-card-image src="assets/img/img1.jpg " alt="Photo of a Shiba Inu ">
+                        </div>
+                        <div fxFlex="20% " fxLayout="column ">
+                            <img fxFlex="50% " mat-card-image src="assets/img/img1.jpg " alt="Photo of a Shiba Inu ">
+                            <img fxFlex="50% " mat-card-image src="assets/img/img1.jpg " alt="Photo of a Shiba Inu ">
+                        </div>
+                    </div>
+                    <p>
+                        Circuito
+                    </p>
+                    <h1>
+                        Calor y cafe
+                    </h1>
+                    <p>
+                        Tema y otros temas
+                    </p>
+                    <hr>
+
+                </mat-card-content>
+
+            </mat-card>
+
+
+        </div>
+        <mat-card fxFlex="30 ">
+            <h1>
+                Busqueda
+            </h1>
+            <p>alguna busqueda</p>
+            <h2>Resumen de reserva</h2>
+        </mat-card>
+    </div>
+</div> -->

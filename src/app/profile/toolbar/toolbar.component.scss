@@ -1,0 +1,41 @@
+.toolbar {
+    // position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+    // width: auto;
+    height: 104px;
+    top: 0;
+    // left: 0;
+    right: 0;
+    // height: 104px;
+    display: flex;
+    align-items: flex-start flex-start;
+    // background-color: white;
+    // box-shadow: inset 0 3px 6px rgba(0, 0, 0, .16);
+    // color: white;
+    font-weight: 600;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 8px;
+        margin: 1%;
+    }
+    svg {
+        width: 40%;
+        height: 40%;
+    }
+}
+
+// .steps {
+//     background-color: blue;
+//     height: 50px;
+// }
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.spacer-right {
+    margin-right: 15%;
+}
