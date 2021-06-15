@@ -21,6 +21,8 @@ import { OpinionsComponent } from './profile/opinions/opinions.component';
 import { OffersComponent } from './profile/offers/offers.component';
 import { StepsComponent } from './profile/steps/steps.component';
 import { ReservationCardComponent } from './profile/reservation-card/reservation-card.component';
+import { SearchComponent } from './profile/search/search.component';
+import { NgpMaterialRatingModule } from 'ngp-material-rating';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import { ReservationCardComponent } from './profile/reservation-card/reservation
     OpinionsComponent,
     OffersComponent,
     StepsComponent,
-    ReservationCardComponent
+    ReservationCardComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +49,8 @@ import { ReservationCardComponent } from './profile/reservation-card/reservation
     MatToolbarModule,
     MatIconModule,
     MatSidenavModule,
-    MatStepperModule
+    MatStepperModule,
+    NgpMaterialRatingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
