@@ -23,6 +23,9 @@ import { StepsComponent } from './profile/steps/steps.component';
 import { ReservationCardComponent } from './profile/reservation-card/reservation-card.component';
 import { SearchComponent } from './profile/search/search.component';
 import { NgpMaterialRatingModule } from 'ngp-material-rating';
+import { SwiperModule } from "swiper/angular";
+import { SwipperDatesComponent } from './profile/options/swipper-dates/swipper-dates.component';
+import { SearchGroupsComponent } from './profile/search/search-groups/search-groups.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +39,9 @@ import { NgpMaterialRatingModule } from 'ngp-material-rating';
     OffersComponent,
     StepsComponent,
     ReservationCardComponent,
-    SearchComponent
+    SearchComponent,
+    SwipperDatesComponent,
+    SearchGroupsComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +55,8 @@ import { NgpMaterialRatingModule } from 'ngp-material-rating';
     MatIconModule,
     MatSidenavModule,
     MatStepperModule,
-    NgpMaterialRatingModule
+    NgpMaterialRatingModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

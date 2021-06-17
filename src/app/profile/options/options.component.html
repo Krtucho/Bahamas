@@ -1,31 +1,37 @@
-<div id="options-layout " style="margin-bottom: 10px;">
+<div id="options-layout " style="margin-bottom: 30px;">
 
-    <mat-card clas="example-card ">
-        <mat-card-content>
+    <mat-card>
+        <mat-card-content fxLayout="column wrap" fxLayoutAlign="center start" fxLayoutGap="20px grid" style="color: #ffffff;">
             <h1>
                 Opciones de Reserva
             </h1>
             <p class="options-text-top">
                 Fechas de inicio disponibles
             </p>
-            <p>Algo</p>
+
+            <app-swipper-dates></app-swipper-dates>
+
             <mat-card>
                 <mat-card-content>
-                    <div fxLayout="row wrap " fxLayoutAlign="start center " fxLayoutGap="10px grid ">
-                        <div fxFlex="70% ">
-                            <p class="options-text-top">Opcion 1</p>
-                        </div>
-                        <div fxFlex="20% ">
-                            <label>Ver mas detalles</label>
-                            <button mat-icon-button aria-label="Example icon button with a vertical three dot icon ">
+                    <div fxLayout="column wrap">
+                        <div fxLayout="row wrap " fxLayoutAlign="start center " fxLayoutGap="10px grid ">
+                            <div fxFlex="70% ">
+                                <p class="options-text-top">Opcion 1</p>
+                            </div>
+                            <div fxFlex="30% " fxLayout="row wrap" fxLayoutAlign="center center">
+                                <div style="letter-spacing: .252px;color: #707070;">
+                                    Ver mas detalles
+                                </div>
+                                <button mat-icon-button aria-label="Example icon button with a vertical three dot icon ">
                                 <mat-icon>more_vert</mat-icon>
                               </button>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Dias -->
-                    <mat-horizontal-stepper #stepper class="spacer-left spacer-right ">
-                        <mat-step label="Dia 1 ">
-                            <!-- <form [formGroup]="firstFormGroup ">
+
+                        <!-- Dias -->
+                        <mat-horizontal-stepper #stepper class="spacer-left spacer-right ">
+                            <mat-step label="Dia 1 ">
+                                <!-- <form [formGroup]="firstFormGroup ">
                                 <ng-template matStepLabel>Fill out your name</ng-template>
                                 <mat-form-field>
                                     <mat-label>Name</mat-label>
@@ -35,76 +41,94 @@
                                     <button mat-button matStepperNext>Next</button>
                                 </div>
                             </form> -->
-                        </mat-step>
-                        <mat-step label="Dia 2 ">
-                            <!-- <form [formGroup]="secondFormGroup "> -->
-                            <!-- <mat-form-field>
+                            </mat-step>
+                            <mat-step label="Dia 2 ">
+                                <!-- <form [formGroup]="secondFormGroup "> -->
+                                <!-- <mat-form-field>
                                     <mat-label>Address</mat-label>
                                     <input matInput formControlName="secondCtrl " placeholder="Ex. 1 Main St, New York, NY " required>
                                 </mat-form-field> -->
-                            <!-- <div>
+                                <!-- <div>
                                     <button mat-button matStepperPrevious>Back</button>
                                     <button mat-button matStepperNext>Next</button>
                                 </div> -->
-                            <!-- </form> -->
-                        </mat-step>
-                        <mat-step label="Dia 3 ">
-                            <!-- <ng-template matStepLabel>Done</ng-template>
+                                <!-- </form> -->
+                            </mat-step>
+                            <mat-step label="Dia 3 ">
+                                <!-- <ng-template matStepLabel>Done</ng-template>
                             <p>You are now done.</p> -->
-                            <!-- <div>
+                                <!-- <div>
                                 <button mat-button matStepperPrevious>Back</button>
                                 <button mat-button (click)="stepper.reset() ">Reset</button>
                             </div> -->
-                        </mat-step>
-                    </mat-horizontal-stepper>
+                            </mat-step>
+                        </mat-horizontal-stepper>
 
-                    <!-- Componentes de opciones -->
-                    <div fxLayout="row nowrap" fxLayoutGap="20px">
-                        <mat-card style="background-color: #ffffff;
-                        border-radius: 16px;
-                        width: 492px;
-                        height: 218px;
-                        overflow: hidden;">
-                            <mat-card-content>
-                                <div>
-                                    <div fxLayout="row wrap " fxLayoutAlign="start center " fxLayoutGap="10px grid ">
-                                        <img fxFlex="20% " src="assets/img/img1.jpg " alt="1 " style=" width: 100%; height: 100%; object-fit:cover; object-position: center; border-radius: 8px; margin: 1%; ">
-                                        <div fxFlex="70% " fxLayout="column wrap">
-                                            <div style="font-size: 12px;
+                        <!-- Componentes de opciones -->
+                        <div fxLayout="row nowrap" fxLayoutGap="10px grid">
+                            <mat-card style="background-color: #ffffff;
+                                border-radius: 16px;
+                                width: 492px;
+                                height: 218px;
+                                overflow: hidden;">
+                                <mat-card-content>
+                                    <div fxLayout="column wrap" fxLayoutGap="20px">
+
+                                        <!-- Imagen con calificacion -->
+                                        <div fxFlex="100%" fxLayout="row" fxLayoutAlign="center center " fxLayoutGap="10px grid ">
+                                            <div fxFlex="30% " style="color: #ffffff;
+                                                width: 164px;
+                                                height: 125px;">
+                                                <img src="assets/img/img1.jpg " alt="1 " style=" width: 100%; height: 100%; object-fit:cover; object-position: center; border-radius: 8px; ">
+                                            </div>
+
+                                            <div fxFlex="70% " fxLayout="column wrap">
+                                                <div style="font-size: 12px;
                                             letter-spacing: .396px;
                                             text-decoration: underline;
                                             color: #e91e63;">
-                                                La Habana Cuba
-                                            </div>
-                                            <div class="options-text-top">Hotel Nacional Cuba</div>
-                                            <div>
-                                                <ngp-material-rating [value]="5"> </ngp-material-rating>
-                                            </div>
-                                            <div fxLayout="row">
-                                                <mat-icon aria-hidden="false " aria-label="Example home icon " style="color: rgba(233, 30, 99, .5); width: 17px; height: 17px;">home</mat-icon>
-                                                <mat-icon aria-hidden="false " aria-label="Example home icon " style="color: rgba(233, 30, 99, .5); width: 17px; height: 17px;">home</mat-icon>
-                                                <mat-icon aria-hidden="false " aria-label="Example home icon " style="color: rgba(233, 30, 99, .5); width: 17px; height: 17px;">home</mat-icon>
+                                                    La Habana Cuba
+                                                </div>
+                                                <div class="options-text-top">Hotel Nacional Cuba</div>
+
+                                                <!-- Stars -->
+                                                <div>
+                                                    <ngp-material-rating [value]="5"> </ngp-material-rating>
+                                                </div>
+
+                                                <!-- Icons -->
+                                                <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px grid">
+                                                    <mat-icon aria-hidden="false " aria-label="Example home icon " style="color: rgba(233, 30, 99, .5); width: 17px; height: 17px;">home</mat-icon>
+                                                    <mat-icon aria-hidden="false " aria-label="Example home icon " style="color: rgba(233, 30, 99, .5); width: 17px; height: 17px;">home</mat-icon>
+                                                    <mat-icon aria-hidden="false " aria-label="Example home icon " style="color: rgba(233, 30, 99, .5); width: 17px; height: 17px;">home</mat-icon>
+                                                    <mat-icon aria-hidden="false " aria-label="Example home icon " style="color: rgba(233, 30, 99, .5); width: 17px; height: 17px;">home</mat-icon>
+                                                </div>
                                             </div>
                                         </div>
+
+                                        <!-- Parrafo -->
+                                        <div fxLayout="row wrap" fxLayoutAlign="space-aroun center">
+                                            <p style="letter-spacing: .252px;
+                                            color: rgba(0,0,0,.87); margin-left:2%; text-align:justify;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim ven</p>
+                                        </div>
+
                                     </div>
-                                    <p style="letter-spacing: .252px;
-                                    color: rgba(0,0,0,.87);">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim ven</p>
-                                </div>
-                            </mat-card-content>
-                        </mat-card>
+                                </mat-card-content>
+                            </mat-card>
 
 
 
 
-                    </div>
-                    <!-- Componentes de opciones -->
-
-                    <div fxLayout="row wrap " fxLayoutAlign="end center ">
-                        <div fxFlex="10% ">Total del viaje </div>
-                        <div fxFlex="20% ">
-                            <h1>$200CUP</h1>
                         </div>
-                        <div fxFlex="20% "><button style="border-radius: 8px; ">Seleccionar</button></div>
+                        <!-- Componentes de opciones -->
+
+                        <div fxLayout="row wrap " fxLayoutAlign="end center ">
+                            <div fxFlex="10% ">Total del viaje </div>
+                            <div fxFlex="20% ">
+                                <h1>$200CUP</h1>
+                            </div>
+                            <div fxFlex="20% "><button style="border-radius: 8px; ">Seleccionar</button></div>
+                        </div>
                     </div>
                 </mat-card-content>
             </mat-card>

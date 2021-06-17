@@ -1,4 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { SwiperComponent } from "swiper/angular";
+
+// import Swiper core and required modules
+import SwiperCore, { Navigation } from "swiper/core";
+
+// install Swiper modules
+SwiperCore.use([Navigation]);
 
 @Component({
   selector: 'app-options',

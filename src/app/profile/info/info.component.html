@@ -1,7 +1,7 @@
-<div id="image-layout" fxLayout="row" fxLayoutAlign="start" fxLayoutGap='1% grid'>
-    <mat-card style="margin-right: 1%;" fxFlex="100%">
+<div id="image-layout" fxLayout="row" fxLayoutAlign="start" fxLayoutGap='0% grid'>
+    <mat-card fxFlex="100%">
         <mat-card-content>
-            <div fxFlex="100%">
+            <div fxFlex="100%" style="margin: 1%;">
                 <!-- calc(100% - 10%) -->
                 <div fxLayout="row " fxLayoutAlign="spaces-between  start" fxLayoutGap="0px grid " style="height: 312px; position: relative;">
                     <img fxFlex="70% " src="assets/img/img1.jpg " alt="1 " id="left-img">
@@ -43,8 +43,12 @@
                     color: rgba(66,66,66,.87);">
                         Circuito
                     </p>
-                    <h1>Calor y Cafe</h1>
-
+                    <div fxLayout="row wrap">
+                        <h1 fxFlex="80%">Calor y Cafe</h1>
+                        <div fxFlex="20%">
+                            <ngp-material-rating [value]="5"> </ngp-material-rating>
+                        </div>
+                    </div>
                     <div fxLayout="row wrap " fxLayoutAlign="start center " fxLayoutGap="10px grid ">
                         <div fxFlex="50% ">
                             <div fxFlexLayout="row">
@@ -100,7 +104,7 @@
                 </div>
 
                 <hr>
-                <div id="what-includes " fxLayout="column">
+                <div id="what-includes " fxLayout="column" style="position: relative;">
                     <p class="text-top">¿Qué incluye?</p>
                     <div fxLayout="row wrap " fxLayoutGap="10px grid">
                         <mat-icon aria-hidden="false " aria-label="Example home icon " style="color: rgba(233, 30, 99, .5); width: 17px; height: 17px;">home</mat-icon>
@@ -116,16 +120,19 @@
                     <div class="what-includes-text-bottom ">- Barco por el Valle del Rhin, Por el lago Traunsee , Tronchetto / Plaza de San Marcos / Tronchetto</div>
                     <div class="what-includes-text-bottom ">- Visita panorámica en: Madrid, Paris, Londres, Amsterdam, Bruselas, Viena, Venecia, Asis, Roma, Florencia, Barcelona</div>
 
-                    <div style="background-color: #ffffff;
-                    border-radius: 18px;
-                    box-shadow: inset 3px 3px 6px rgba(0, 0, 0, .16);
-                    width: 108px;
-                    height: 36px;
-                    overflow: hidden;
-                    right: 0; align-content: center; text-transform: uppercase;">
-                        <label style="font-weight: 500;
+                    <div fxLayoutAlign="end end">
+                        <div fxLayoutAlign="center center" style="
+                    
+                        background-color: #ffffff;
+                        border-radius: 18px;
+                        box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.16);
+                        width: 108px;
+                        height: 36px;
+                        overflow: hidden;">
+                            <label style="font-weight: 500;
                         letter-spacing: 1.246px;
                         color: #e91e63;">LEER MÁS</label>
+                        </div>
                     </div>
                 </div>
 
