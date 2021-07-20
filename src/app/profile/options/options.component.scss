@@ -1,16 +1,18 @@
-.padding-left-right {
-    padding-left: 20%;
-    padding-right: 20%;
-}
-
 #options-layout {
     // max-width: "calc(100% - 340px)";
     // width: calc(100% - 620px);
     // padding-left: 10%;
-    margin-bottom: 300px;
+    .mat-card {
+        margin-bottom: 30px;
+    }
     // padding-left: 10%;
     // padding-right: 10%;
-    padding-bottom: 10px;
+    // padding-bottom: 10px;
+}
+
+.padding-left-right {
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 h1 {

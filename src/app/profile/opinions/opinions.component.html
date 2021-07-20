@@ -1,92 +1,51 @@
 <!-- Opiniones -->
-<div id="opinion-layout " style="margin-bottom: 10px;">
+<div id="opinion-layout">
     <mat-card>
         <mat-card-content>
-            <h1>
-                Opiniones
-            </h1>
-            <div fxLayout="row wrap " fxLayoutAlign="space-between center" fxLayoutGap=" 10px grid ">
 
-                <div fxFlex="80% " fxLayout="row ">
-                    <ngp-material-rating [value]="5 "> </ngp-material-rating>
-                    <p style="font-weight: 500; letter-spacing: .252px; ">4.5</p>
-                    <p style="letter-spacing: .252px; color: #757575; ">/5</p>
+            <div fxLayout="column wrap " fxLayoutGap=" 5px ">
+                <div fxFlex="100%">
+                    <h1>
+                        Opiniones
+                    </h1>
                 </div>
-
-                <div fxFlex="20% " style="font-size: 20px; font-weight: 600; letter-spacing: .16px; color: rgba(0,0,0,.87); ">
-
-                    Excelente
-                </div>
+                <!-- fxLayoutAlign="space-between end" -->
+                <app-opinions-rating></app-opinions-rating>
 
                 <div fxFlex="100% ">
                     <hr>
 
                 </div>
 
-                <!-- Componentes -->
-                <!-- <div fxFLex="30% "> -->
-                <div fxFlex="40% " fxLayout="row wrap " fxLayoutAlign="start center " fxLayoutGap="10px grid ">
-                    <img fxFlex="30% " class=" resp-img " src="assets/img/img1.jpg " alt=" ">
-                    <div fxFlex="70% " fxLayout="column wrap ">
-                        <div style="font-weight: 500;
-                        letter-spacing: .252px;">Amy Stephani Smith</div>
-                        <div fxLayout="row">
-                            <ngp-material-rating [value]="5 "> </ngp-material-rating>
-                            <p style="font-size: 10px;
-                            font-weight: 500;
-                            letter-spacing: 1.5px;
-                            color: rgba(0,0,0,.87);">MARZO 2020
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- </div> -->
-                <div fxFlex="60% ">
-                    <p style="letter-spacing: .252px;
-                    color: rgba(0,0,0,.87);">
-                        orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation Lorem ipsum dolor sit amet, consectetuer adipiscing
-                        elit, sed diam nonummy nibh euismod tincidunt ut
-                    </p>
-                </div>
+                <app-opinions-opinion></app-opinions-opinion>
 
                 <div fxFlex="100%">
                     <hr>
                 </div>
 
-                <div fxFlex="40% " fxLayout="row wrap " fxLayoutAlign="start center " fxLayoutGap="10px grid ">
-                    <img fxFlex="30% " class=" resp-img " src="assets/img/img1.jpg " alt=" ">
-                    <div fxFlex="70% " fxLayout="column wrap ">
-                        <div style="font-weight: 500;
-                        letter-spacing: .252px;">Amy Stephani Smith</div>
-                        <div fxLayout="row">
-                            <ngp-material-rating [value]="5 "> </ngp-material-rating>
-                            <p style="font-size: 10px;
-                            font-weight: 500;
-                            letter-spacing: 1.5px;
-                            color: rgba(0,0,0,.87);">MARZO 2020
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- </div> -->
-                <div fxFlex="60% ">
-                    <p style="letter-spacing: .252px;
-                    color: rgba(0,0,0,.87);">
-                        orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation Lorem ipsum dolor sit amet, consectetuer adipiscing
-                        elit, sed diam nonummy nibh euismod tincidunt ut
-                    </p>
-                </div>
+                <app-opinions-opinion></app-opinions-opinion>
 
                 <div fxFlex="100%">
                     <hr>
                 </div>
+
+                <app-opinions-opinion></app-opinions-opinion>
+
                 <!-- Ver todas las opiniones -->
                 <div fxLayout="row" fxLayoutAlign="end end ">
-                    <button style="color: #ffffff;
+                    <button style="
+                    background-color: #ffffff;
+                    border-radius: 18px;
+                    box-shadow: inset 3px 3px 6px rgba(0, 0, 0, .16);
+                    overflow: hidden;
                     width: 261px;
-                    height: 36px;"><label style="font-weight: 500;
+                    height: 36px;
+                    ">
+                        <div style="font-weight: 500;
                     letter-spacing: 1.246px;
-                    color: #e91e63;">Ver todas las opiniones</label></button>
+                    color: #e91e63;
+                    text-transform: uppercase;">Ver todas las opiniones</div>
+                    </button>
 
                 </div>
             </div>

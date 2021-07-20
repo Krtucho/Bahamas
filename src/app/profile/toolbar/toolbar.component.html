@@ -9,12 +9,25 @@
 
     <!-- Right -->
     <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+
+    <div fxLayoutAlign="center center" style="background-color: #d32f2f;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;">
+        <div style="background-color: #fdd835;
+        width: 24px;
+        height: 11px;
+        ">
+        </div>
+    </div>
+
+    <!-- <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
     <mat-icon>favorite</mat-icon>
-  </button>
+  </button> -->
     <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
    <mat-icon>share</mat-icon>
  </button>-->
-    <button mat-button color="primary">Crear cuenta</button>
-    <button mat-button color="primary" class="spacer-right">Iniciar sesion</button>
+    <button mat-button>Crear cuenta</button>
+    <button mat-button class="spacer-right">Iniciar sesion</button>
 </mat-toolbar>

@@ -13,7 +13,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatStepperModule} from '@angular/material/stepper';
-import { ProfileComponent } from './profile/profile.component';
+// import { ProfileComponent } from './profile/profile.component';
 import { ToolbarComponent } from './profile/toolbar/toolbar.component';
 import { InfoComponent } from './profile/info/info.component';
 import { OptionsComponent } from './profile/options/options.component';
@@ -26,22 +26,38 @@ import { NgpMaterialRatingModule } from 'ngp-material-rating';
 import { SwiperModule } from "swiper/angular";
 import { SwipperDatesComponent } from './profile/options/swipper-dates/swipper-dates.component';
 import { SearchGroupsComponent } from './profile/search/search-groups/search-groups.component';
+import { OpinionsRatingComponent } from './profile/opinions/opinions-rating/opinions-rating.component';
+import { OpinionsOpinionComponent } from './profile/opinions/opinions-opinion/opinions-opinion.component';
+import { OffersListComponent } from './profile/offers/offers-list/offers-list.component';
+import { OffersListOfferComponent } from './profile/offers/offers-list/offers-list-offer/offers-list-offer.component';
+import { OffersTitleComponent } from './profile/offers/offers-title/offers-title.component';
+import { OffersMoreOffersComponent } from './profile/offers/offers-more-offers/offers-more-offers.component';
+import { ProfileModule } from './profile/profile.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyComponentComponent,
-    ProfileComponent,
-    ToolbarComponent,
-    InfoComponent,
-    OptionsComponent,
-    OpinionsComponent,
-    OffersComponent,
-    StepsComponent,
+    // ProfileComponent,
+    // ToolbarComponent,
+    // InfoComponent,
+    // OptionsComponent,
+    // OpinionsComponent,
+    // OffersComponent,
+    // StepsComponent,
     ReservationCardComponent,
-    SearchComponent,
-    SwipperDatesComponent,
-    SearchGroupsComponent
+    // SearchComponent,
+    // SwipperDatesComponent,
+    // SearchGroupsComponent,
+    // SheylaComponent,
+    // InitialSliderComponent,
+    // SheylaToolbarComponent,
+    // OpinionsRatingComponent,
+    // OpinionsOpinionComponent,
+    // OffersListComponent,
+    // OffersListOfferComponent,
+    // OffersTitleComponent,
+    // OffersMoreOffersComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +72,9 @@ import { SearchGroupsComponent } from './profile/search/search-groups/search-gro
     MatSidenavModule,
     MatStepperModule,
     NgpMaterialRatingModule,
-    SwiperModule
+    SwiperModule,
+    //Profile
+    ProfileModule
   ],
   providers: [],
   bootstrap: [AppComponent]
