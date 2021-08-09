@@ -1,0 +1,32 @@
+<app-toolbar></app-toolbar>
+<app-steps></app-steps>
+
+<div fxLayout="column nowrap" style="width: 1000px; margin: 0 auto;">
+    <div style="font-size: 48px;
+    font-weight: 700;
+    color: rgba(0,0,0,.87);
+    margin-bottom: 5% !important;">
+        Pago de la reserva del Paquete de Viaje
+    </div>
+
+    <div fxLayout="column wrap" fxLayoutGap="30px">
+        <mat-card>
+            <mat-card-content>
+                <app-pays-reservation-details></app-pays-reservation-details>
+
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card>
+            <mat-card-content>
+                <app-pays-client-details></app-pays-client-details>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card>
+            <mat-card-content>
+                <app-pays-pay-details></app-pays-pay-details>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

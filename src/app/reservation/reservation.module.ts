@@ -24,7 +24,10 @@ import { ReservationNumberMediumComponent } from './reservation-number-medium/re
     // MatLabelModule
   ],
   exports:[
-    ReservationComponent
+    ReservationComponent,
+    ReservationDataInputComponent,
+    ReservationNumberSmallComponent,
+    ReservationNumberMediumComponent
   ]
 })
 export class ReservationModule { }

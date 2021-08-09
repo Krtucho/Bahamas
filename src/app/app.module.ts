@@ -8,6 +8,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 // import { FlexLayoutModule } from '@angular/flex-layout';
 import { ProfileModule } from './profile/profile.module';
 import { ReservationModule } from './reservation/reservation.module';
+import { PaysModule } from './pays/pays.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ReservationModule } from './reservation/reservation.module';
     // FlexLayoutModule,
     
     ProfileModule, // Profile
-    ReservationModule // Reservation
+    ReservationModule, // Reservation
+    PaysModule // Pays
   ],
   providers: [],
   bootstrap: [AppComponent]
