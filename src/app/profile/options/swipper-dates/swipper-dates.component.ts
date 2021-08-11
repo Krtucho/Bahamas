@@ -11,16 +11,23 @@ SwiperCore.use([Navigation]);
 
 @Component({
   selector: 'app-swipper-dates',
-  template: `<swiper [navigation]="true" class="mySwiper">
-  <ng-template swiperSlide>Slide 1</ng-template
-  ><ng-template swiperSlide>Slide 2</ng-template
-  ><ng-template swiperSlide>Slide 3</ng-template
-  ><ng-template swiperSlide>Slide 4</ng-template
-  ><ng-template swiperSlide>Slide 5</ng-template
-  ><ng-template swiperSlide>Slide 6</ng-template
-  ><ng-template swiperSlide>Slide 7</ng-template
-  ><ng-template swiperSlide>Slide 8</ng-template
-  ><ng-template swiperSlide>Slide 9</ng-template>
+  template: `<swiper [navigation]="false" [freeMode]="true">
+  <ng-template swiperSlide>
+    <div style="background-color: grey; color: white; padding: 20px">Slide 1</div>
+  </ng-template>
+
+  <ng-template swiperSlide>
+    <div style="background-color: grey; color: white; padding: 20px">Slide 1</div>
+  </ng-template>
+
+  <ng-template swiperSlide>
+    <div style="background-color: grey; color: white; padding: 20px">Slide 1</div>
+  </ng-template>
+
+  <ng-template swiperSlide>
+    <div style="background-color: grey; color: white; padding: 20px">Slide 1</div>
+  </ng-template>
+  
 </swiper>`,
   //'./swipper-dates.component.html',
   styleUrls: ['./swipper-dates.component.scss'],

@@ -1,7 +1,7 @@
 <div id="options-layout">
 
     <mat-card>
-        <mat-card-content fxLayout="column wrap" fxLayoutAlign="center start" fxLayoutGap="20px grid" style="color: #ffffff;">
+        <mat-card-content fxFlex="100%" fxLayout="column" fxLayoutAlign="center start" fxLayoutGap="20px grid" style="color: #ffffff;">
             <h1>
                 Opciones de Reserva
             </h1>
@@ -9,12 +9,13 @@
                 Fechas de inicio disponibles
             </p>
 
-            <app-swipper-dates></app-swipper-dates>
+            <app-swipper-dates style="display: grid; position: relative;">
+            </app-swipper-dates>
 
-            <div fxLayout="column wrap" style="margin: 0px 10px 10px 0px; width:100%;">
+            <div fxLayout="column" style="margin: 0px 10px 10px 0px; width:100%;">
                 <mat-card style="color: #ffffff;">
                     <mat-card-content>
-                        <div fxLayout="column wrap">
+                        <div fxLayout="column">
                             <div fxLayout="row wrap " fxLayoutAlign="start center " fxLayoutGap="10px grid ">
                                 <div fxFlex="70% ">
                                     <p class="options-text-top">Opcion 1</p>
