@@ -1,13 +1,13 @@
 <div id="options-layout">
 
-    <mat-card>
-        <mat-card-content fxFlex="100%" fxLayout="column" fxLayoutAlign="center start" fxLayoutGap="20px grid" style="color: #ffffff;">
+    <mat-card class="mat-card-sections-left">
+        <mat-card-content fxFlex="100%" fxLayout="column" fxLayoutAlign="center start" fxLayoutGap="15px" style="color: #ffffff;">
             <h1>
                 Opciones de Reserva
             </h1>
-            <p class="options-text-top">
+            <div class="options-text-top">
                 Fechas de inicio disponibles
-            </p>
+            </div>
 
             <app-swipper-dates style="display: grid; position: relative;">
             </app-swipper-dates>
@@ -16,102 +16,121 @@
                 <mat-card style="color: #ffffff;">
                     <mat-card-content>
                         <div fxLayout="column">
-                            <div fxLayout="row wrap " fxLayoutAlign="start center " fxLayoutGap="10px grid ">
-                                <div fxFlex="70% ">
-                                    <p class="options-text-top">Opcion 1</p>
+                            <div fxFlex="100%" fxLayout="row" fxLayoutAlign="space-between start" fxLayoutGap="10px grid ">
+                                <div>
+                                    <div class="options-text-top">Opción 1</div>
                                 </div>
-                                <div fxFlex="30% " fxLayout="row wrap" fxLayoutAlign="center center">
-                                    <div style="letter-spacing: .252px;color: #707070;">
+                                <div fxLayout="row" fxLayoutAlign=" center">
+                                    <div style="font-size: 12px; letter-spacing: .252px; color: #707070;">
                                         Ver mas detalles
                                     </div>
-                                    <button mat-icon-button aria-label="Example icon button with a vertical three dot icon ">
-                                    <mat-icon>more_vert</mat-icon>
-                                  </button>
+                                    <div mat-icon-button style="height:auto; width:auto; color: #707070;"aria-label="Example icon button with a vertical three dot icon ">
+                                        <mat-icon> expand_more</mat-icon>
+                                    </div>
                                 </div>
                             </div>
 
                             <!-- Dias -->
-                            <mat-horizontal-stepper #stepper class="spacer-left spacer-right ">
-                                <mat-step label="Dia 1 ">
-                                    <!-- <form [formGroup]="firstFormGroup ">
-                                    <ng-template matStepLabel>Fill out your name</ng-template>
-                                    <mat-form-field>
-                                        <mat-label>Name</mat-label>
-                                        <input matInput placeholder="Last name, First name " formControlName="firstCtrl " required>
-                                    </mat-form-field>
-                                    <div>
-                                        <button mat-button matStepperNext>Next</button>
-                                    </div>
-                                </form> -->
-                                </mat-step>
-                                <mat-step label="Dia 2 ">
-                                    <!-- <form [formGroup]="secondFormGroup "> -->
-                                    <!-- <mat-form-field>
-                                        <mat-label>Address</mat-label>
-                                        <input matInput formControlName="secondCtrl " placeholder="Ex. 1 Main St, New York, NY " required>
-                                    </mat-form-field> -->
-                                    <!-- <div>
+                            <div fxFlex="100%" class="spacer-left spacer-right ">
+                                <mat-horizontal-stepper #stepper>
+                                    <mat-step label="Dia 1 ">
+                                        <!-- <form [formGroup]="firstFormGroup ">
+                                        <ng-template matStepLabel>Fill out your name</ng-template>
+                                        <mat-form-field>
+                                            <mat-label>Name</mat-label>
+                                            <input matInput placeholder="Last name, First name " formControlName="firstCtrl " required>
+                                        </mat-form-field>
+                                        <div>
+                                            <button mat-button matStepperNext>Next</button>
+                                        </div>
+                                    </form> -->
+                                    </mat-step>
+                                    <mat-step label="Dia 2 ">
+                                        <!-- <form [formGroup]="secondFormGroup "> -->
+                                        <!-- <mat-form-field>
+                                            <mat-label>Address</mat-label>
+                                            <input matInput formControlName="secondCtrl " placeholder="Ex. 1 Main St, New York, NY " required>
+                                        </mat-form-field> -->
+                                        <!-- <div>
+                                            <button mat-button matStepperPrevious>Back</button>
+                                            <button mat-button matStepperNext>Next</button>
+                                        </div> -->
+                                        <!-- </form> -->
+                                    </mat-step>
+                                    <mat-step label="Dia 3 ">
+                                        <!-- <ng-template matStepLabel>Done</ng-template>
+                                    <p>You are now done.</p> -->
+                                        <!-- <div>
                                         <button mat-button matStepperPrevious>Back</button>
-                                        <button mat-button matStepperNext>Next</button>
+                                        <button mat-button (click)="stepper.reset() ">Reset</button>
                                     </div> -->
-                                    <!-- </form> -->
-                                </mat-step>
-                                <mat-step label="Dia 3 ">
-                                    <!-- <ng-template matStepLabel>Done</ng-template>
-                                <p>You are now done.</p> -->
-                                    <!-- <div>
-                                    <button mat-button matStepperPrevious>Back</button>
-                                    <button mat-button (click)="stepper.reset() ">Reset</button>
-                                </div> -->
-                                </mat-step>
-                            </mat-horizontal-stepper>
+                                    </mat-step>
+                                </mat-horizontal-stepper>
+                            </div>
+                            
 
                             <!-- Componentes de opciones -->
-                            <div fxLayout="row nowrap" fxLayoutGap="10px grid">
-                                <mat-card style="background-color: #ffffff;
-                                border-radius: 16px;
-                                width: 492px;
-                                height: 218px;
-                                overflow: hidden;">
+                            <div fxFlex="100%" fxLayout="row" fxLayoutGap="10px grid">
+                                <mat-card class="info-content">
                                     <mat-card-content>
-                                        <div fxLayout="column wrap" fxLayoutGap="20px">
+                                        <div fxLayout="column" fxLayoutGap="10px">
 
                                             <!-- Imagen con calificacion -->
-                                            <div fxFlex="100%" fxLayout="row" fxLayoutAlign="center center " fxLayoutGap="10px grid ">
+                                            <div fxFlex="100%" fxLayout="row" fxLayoutGap="10px grid ">
                                                 <div fxFlex="30% " style="color: #ffffff;
-                                                width: 164px;
-                                                height: 125px;">
-                                                    <img src="assets/img/img1.jpg " alt="1 " style=" width: 100%; height: 100%; object-fit:cover; object-position: center; border-radius: 8px; ">
+                                                width: 190px;
+                                                height: 90px;">
+                                                    <img src="assets/img/Morro_Castle_y_la_Bahia_de_La_Habana_4@1x.png" alt="1 " style=" width: 100%; height: 100%; object-fit:cover; object-position: center; border-top-left-radius: 8px; border-bottom-right-radius: 8px; ">
                                                 </div>
 
-                                                <div fxFlex="70% " fxLayout="column wrap">
-                                                    <div style="font-size: 12px;
-                                            letter-spacing: .396px;
-                                            text-decoration: underline;
-                                            color: #e91e63;">
-                                                        La Habana Cuba
+                                                <div fxFlex="70%" fxLayout="column" fxLayoutAlign="space-between" style="padding-inline: 2%">
+                                                    <div fxFlex="100%" fxLayout="row" fxLayoutGap="0px">
+                                                        <div>
+                                                            <mat-icon style="color: #e91e63; font-size: 12px;"> place</mat-icon>
+                                                        </div>
+                                                        <div style="
+                                                            font-size: 10px;
+                                                            letter-spacing: .396px;
+                                                            text-decoration: underline;
+                                                            color: #e91e63;">
+                                                            La Habana Cuba
+                                                        </div>
                                                     </div>
-                                                    <div class="options-text-top">Hotel Nacional Cuba</div>
+                                                    
+                                                    <div fxFlex="100%" class="options-text-top">Hotel Nacional de Cuba</div>
 
                                                     <!-- Stars -->
-                                                    <div>
+                                                    <div fxFlex="100%">
                                                         <ngp-material-rating [value]="5"> </ngp-material-rating>
                                                     </div>
 
                                                     <!-- Icons -->
-                                                    <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px grid">
-                                                        <mat-icon aria-hidden="false " aria-label="Example home icon " style="color: rgba(233, 30, 99, .5); width: 17px; height: 17px;">home</mat-icon>
-                                                        <mat-icon aria-hidden="false " aria-label="Example home icon " style="color: rgba(233, 30, 99, .5); width: 17px; height: 17px;">home</mat-icon>
-                                                        <mat-icon aria-hidden="false " aria-label="Example home icon " style="color: rgba(233, 30, 99, .5); width: 17px; height: 17px;">home</mat-icon>
-                                                        <mat-icon aria-hidden="false " aria-label="Example home icon " style="color: rgba(233, 30, 99, .5); width: 17px; height: 17px;">home</mat-icon>
+                                                    <div fxFlex="100%" fxLayout="row" fxLayoutAlign=" end" fxLayoutGap="25px" >
+                                                        <div fxLayout="row" fxLayoutAlign="center center" class="hotel-container-icon" >
+                                                            <mat-icon aria-hidden="false " aria-label="Example home icon " class="hotel-icon">local_airport</mat-icon>
+                                                        </div>
+                                                        <div fxLayout="row" fxLayoutAlign="center center" class="hotel-container-icon" >
+                                                            <mat-icon aria-hidden="false " aria-label="Example home icon " class="hotel-icon">directions_bus</mat-icon>
+
+                                                        </div>
+                                                        <div fxLayout="row" fxLayoutAlign="center center" class="hotel-container-icon" >
+                                                            <mat-icon aria-hidden="false " aria-label="Example home icon " class="hotel-icon">directions_car</mat-icon>
+                                                        </div>
+                                                        <div fxLayout="row" fxLayoutAlign="center center" class="hotel-container-icon" >
+                                                            <mat-icon aria-hidden="false " aria-label="Example home icon " class="hotel-icon">explore</mat-icon>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
 
                                             <!-- Parrafo -->
-                                            <div fxLayout="row wrap" fxLayoutAlign="space-aroun center">
-                                                <p style="letter-spacing: .252px;
-                                            color: rgba(0,0,0,.87); margin-left:2%; text-align:justify;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim ven</p>
+                                            <div fxLayout="row" fxLayoutAlign="space-aroun center">
+                                                <p style="
+                                                font-size: 10px;
+                                                letter-spacing: .252px;
+                                                color: rgba(0,0,0,.87); 
+                                                margin-left:2%; 
+                                                text-align:justify;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim ven</p>
                                             </div>
 
                                         </div>
@@ -120,14 +139,18 @@
                             </div>
                             <!-- Componentes de opciones -->
 
-                            <div fxLayout="row wrap " fxLayoutAlign="end center" fxLayoutGap="10px grid" style="padding-bottom: 0%;">
-                                <div style=" color: black; ">Total del viaje </div>
-                                <div fxLayoutAlign="center center">
-                                    <h1>$200CUP</h1>
-                                </div>
-                                <div fxLayoutAlign="center center ">
-                                    <div fxLayoutAlgin="center center" style="background-color: #e91e63; border-radius: 18px; box-shadow: inset 0 3px 6px rgba(0, 0, 0, .16); width: 141px; height: 36px; overflow: hidden; ">
-                                        <div fxLayoutAlign="center center " style="font-weight: 500; letter-spacing: 1.246px; color: #ffffff; ">Seleccionar</div>
+                            <div fxFlex="100%" fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="10px">
+                                <div style="color: black; ">Total del viaje </div>
+                                <h1  >$200CUP</h1>
+                                <div  >
+                                    <div fxLayoutAlign="center center" style="
+                                        background-color: #e91e63; 
+                                        border-radius: 18px; 
+                                        box-shadow: inset 0 3px 6px rgba(0, 0, 0, .16); 
+                                        width: 100%; 
+                                        height: 36px; 
+                                        overflow: hidden; ">
+                                        <div style="font-weight: 500; letter-spacing: 1.246px; color: #ffffff; ">Seleccionar</div>
                                     </div>
                                 </div>
                             </div>

@@ -1,73 +1,88 @@
 <!-- Right Column -->
-<div style="position: sticky; top: 0; color: #ffffff; width: 343px; height: 811px;">
+<div style="position: sticky; top: 0; color: #ffffff; height: 811px;">
+    <!-- width: 343px; -->
     <mat-card>
-        <mat-card-content>
-            <div fxLayout="column wrap" fxLayoutAlign="center stretch">
+        <mat-card-content style="width: 100%;; padding: 0%;">
+            <div fxLayout="column" fxLayoutGap="0px">
+                <!-- fxLayoutAlign="center stretch" -->
                 <!-- Search Component -->
-                <div fxLayout="column wrap" fxLayoutAlign="center stretch" fxLayoutGap="20px">
-                    <div fxFlex="100%" style="font-size: 20px;
+                <div fxLayout="column" fxLayoutGap="10px">
+                    <!-- fxLayoutAlign="center stretch"  -->
+                    <div fxFlex="100%" style="font-size: 15px;
                 letter-spacing: .16px;
                 color: #757575;">
-                        Busqueda
+                        Búqueda
                     </div>
 
-                    <div fxFlex="100%" fxLayout="row wrap" fxLayoutAlign="end end" fxLayoutGap="0px grid" style="border-radius: 25.5px;
+                    <div fxFlex="100%" fxLayout="row" fxLayoutAlign="end end" fxLayoutGap="0px grid" style="border-radius: 25.5px;
                 border: 1px solid #e91e63;
-                width: 294px;
-                height: 51px;
+                width: 100%;
+                height: 40px;
                 overflow: hidden;
                 padding-left:10px;
                 ">
-                        <div fxFlex="75%" fxLayout="column wrap" fxLayoutAlign="space-around stretch" fxLayoutGap="1px grid">
-                            <div fxFlex="50%" style="font-size: 16px;
+                        <div fxFlex="75%" fxLayout="column" fxLayoutAlign="center">
+                            <div fxFlex="100%" style="
+                        font-size: 12px;
                         font-weight: 700;
                         letter-spacing: .496px;
                         color: rgba(0,0,0,.87);">Recorrer Cuba</div>
-                            <div fxFlex="50%" style="font-size: 10px;
+                            <div fxFlex="100%" style="font-size: 7px;
                         font-weight: 500;
-                        letter-spacing: 1.5px;
+                        letter-spacing: 0.8px;
                         color: #757575;">12 ENE-12 FEB / 2 ADULTOS / 2 . .</div>
                         </div>
                         <div fxFlex="25%" style="position: relative;" fxLayoutAlign="end end">
                             <div fxLayoutAlign="center center" style="
                         border-radius: 50%;
                         border: 1px solid #e91e63;
-                        width: 51px;
-                        height: 51px;
+                        width: 40px;
+                        height: 40px;
                         overflow: hidden;">
-                        <mat-icon style="color: rgba(0,0,0,.87);">search</mat-icon>
+                        <mat-icon style="color: #e91e63;">search</mat-icon>
                             </div>
                             
                         </div>
                     </div>
 
-                    <div fxFlex="100%" style="font-size: 20px;
+                    <div fxFlex="100%" style="font-size: 14px;
                             font-weight: 700;
                             letter-spacing: .16px;
                             color: rgba(0,0,0,.87);">
                         Resumen de la reserva
                     </div>
 
-                    <div fxFlex="100%" fxLayout="row wrap " fxLayoutAlign="start center " fxLayoutGap="10px grid ">
-                        <div fxFlex="35% " style="font-weight: 500;
-                    letter-spacing: .252px;
-                    color: #424242;">
-                            Fecha de inicio
-                        </div>
-                        <div fxFlex="65% ">
-                            <div style="font-size: 16px;
-                        font-weight: 700;
-                        letter-spacing: .496px;
-                        color: rgba(0,0,0,.87);">12 de Enero del 2021</div>
-                        </div>
-                        <div fxFlex="45% "></div>
-                        <div fxFlex="55% " style="font-size: 10px;
-                    font-weight: 500;
-                    letter-spacing: 1.5px;
-                    color: #e91e63;">15 DÍAS / 14 NOCHES
+                    <div fxFlex="100%" fxLayout="row" fxLayoutAlign="start center ">
+                        
+                        <div fxLayout="row" fxLayoutAlign="space-between">
 
-                        </div>
+                            <!-- Left -->
+                            <div style="
+                            font-size: 11px;;
+                            font-weight: 500;
+                            letter-spacing: .252px;
+                            color: #424242;">
+                                Fecha de inicio
+                            </div>
 
+                            <!-- Right -->
+                            <div fxLayout="column" fxLayoutAlign="center end">
+                                <div style="
+                                    font-size: 13px;
+                                    font-weight: 700;
+                                    letter-spacing: .496px;
+                                    color: rgba(0,0,0,.87);">12 de Enero del 2021
+                                </div>
+
+                                <div style="
+                                    font-size: 8.5px;
+                                    font-weight: 500;
+                                    letter-spacing: 1.5px;
+                                    color: #e91e63;">15 DÍAS / 14 NOCHES
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -76,29 +91,24 @@
                     <hr>
                 </div>
 
-                <div fxFlex="100%" fxLayout="row wrap " fxLayoutAlign="start center " fxLayoutGap="10px grid ">
-                    <div fxFlex="50% ">
-                        <div style="font-size: 16px;
-                        font-weight: 700;
-                        letter-spacing: .144px;
-                        color: #757575;">
-                            Calor y cafe
-                        </div>
+                <div fxFlex="100%" fxLayout="row" fxLayoutAlign="space-between center ">
+                    <div style="
+                    font-size: 11px;
+                    font-weight: 700;
+                    letter-spacing: .144px;
+                    color: #757575;">
+                        Calor y Café
                     </div>
 
-                    <div fxFlex="50% ">
-                        <div class="search-text-left">
-                            Opción 2
-                        </div>
+                    <div class="search-text-left">
+                        Opción 2
                     </div>
-
 
                 </div>
 
                 <div fxFlex="100% " style="height: 0%;">
                     <hr>
                 </div>
-
 
 
                 <app-search-groups></app-search-groups>
@@ -112,63 +122,69 @@
                     <hr>
                 </div>
 
-                <div fxFlex="100%" fxLayout="row wrap " fxLayoutAlign="space-between center " fxLayoutGap="10px grid ">
-                    <div fxFlex="70% ">
-                        <div class="sub-total-left">
-                            Subtotal:
-                        </div>
+                <div fxFlex="100%" fxLayout="row" fxLayoutAlign="space-between center">
+                    <div class="sub-total-left">
+                        Subtotal:
                     </div>
 
-                    <div fxFlex="30% " class="li-right">
-                        <div class="search-text-left">
-                            $ 500
-                        </div>
+                    <div class="li-right">
+                        $ 500
                     </div>
                 </div>
 
-                <div fxFlex="100%" fxLayout="row wrap " fxLayoutAlign="space-between center " fxLayoutGap="10px grid ">
-                    <div fxFlex="70% ">
-                        <div class="sub-total-left">
-                            Cargos por Reservación:
-                        </div>
+                <div fxFlex="100%" fxLayout="row" fxLayoutAlign="space-between center" >
+                    <div class="sub-total-left">
+                        Cargos por Reservación:
                     </div>
 
-                    <div fxFlex="30% " class="li-right">
-                        <div class="search-text-left">
-                            $ 50
-                        </div>
+                    <div class="li-right">
+                        $ 50
                     </div>
                 </div>
 
-                <div fxLayout="column wrap" fxLayoutAlign="start center" fxLayoutGap="10px grid" style="color: #ffffff;
+                <div fxLayout="column" fxLayoutGap="0px" style="
+                border-top-left-radius: 10%;
+                border-bottom-right-radius: 10%;
+                color: #ffffff;
                 border: 1px solid #e91e63;
-                width: 294px;
-                height: 130px;">
-                    <div fxFlex="40%" fxLayout="row wrap" fxLayoutAlign="space-around stretch">
+                height: 100px;;
+                width: auto;
+                padding-inline: 6%;
+                ">
+                    <div fxFlex="100%" fxLayout="row" fxLayoutAlign="space-between end">
                         <div style="
+                        font-size: 12px;
                         font-weight: 700;
                         letter-spacing: .496px;
-                        color: rgba(0,0,0,.87);">Total a pagar:</div>
-                        <div style="font-size: 20px;
-                        font-weight: 700;
+                        color: rgba(0,0,0,.87);
+                        ">Total a pagar:</div>
+                        <div style="
+                        font-size: 13px;
+                        font-weight: 800;
                         letter-spacing: .16px;
                         color: #e91e63;">$ 4050</div>
                     </div>
 
-                    <div fxFlex="40%" style="font-size: 12px;
+                    <div fxFlex="100%" fxLayout="row" fxLayoutAlign="start start" style="
+                    font-size: 9px;
                     letter-spacing: .396px;
-                    color: #757575;">
+                    color: #757575;
+                    ">
                         Las tarifas se muestran en CUP
                     </div>
 
-                    <div fxLayout="row" fxFlex="20%" fxLayoutAlign="end end">
+                    <div fxLayout="row" fxLayoutAlign="end center">
                         <div fxLayoutAlign="center center" style="background-color: #e91e63;
                         border-radius: 18px;
                         box-shadow: inset 3px 3px 6px rgba(0, 0, 0, .16);
-                        width: 133px;
-                        height: 36px;
-                        overflow: hidden;">
-                            <div style="font-weight: 500;
+                        width: 107px;
+                        height: 25px;
+                        overflow: hidden;
+                        margin-bottom: 10px;"
+                        >
+                            <div style="
+                            font-size: 12px;
+                            font-weight: 500;
                             letter-spacing: 1.246px;
                             color: #ffffff;">PAGAR</div>
                         </div>

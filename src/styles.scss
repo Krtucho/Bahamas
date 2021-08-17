@@ -41,7 +41,49 @@ body {
 }
 
 h1 {
-    font-size: 34px;
+    font-size: 26px;
     font-weight: 700;
     color: rgba(0, 0, 0, .87);
+    letter-spacing: .596px;
 }
+
+.my-h1{
+    font-size: 26px !important;
+    font-weight: 700 !important;
+    color: rgba(0, 0, 0, .87) !important;
+    letter-spacing: .596px !important;
+}
+
+.special-text {
+    font-size: 8px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    color: #e91e63;
+}
+
+// ::ng-deep {
+    mat-card,
+    .mat-card-sections-left {
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, .16) !important;
+        border-top-right-radius: 0px !important; 
+        border-top-left-radius: 20px !important;
+        border-bottom-right-radius: 20px !important;
+        border-bottom-left-radius: 0px !important;
+    }
+    .mat-card-sections-right {
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, .16) !important;
+        border-top-right-radius: 20px !important; 
+        border-top-left-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+        border-bottom-left-radius: 20px !important;
+    }
+
+// } 
+
+// .mc-sections{
+//     box-shadow: 3px 3px 6px rgba(0, 0, 0, .16);
+//     border-top-right-radius: 20px; 
+//     border-top-left-radius: 0px;
+//     border-bottom-right-radius: 20px;
+//     border-bottom-left-radius: 0px;
+// }

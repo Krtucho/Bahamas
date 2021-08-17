@@ -1,14 +1,14 @@
 <div id="image-layout" fxLayout="row" fxLayoutAlign="start" fxLayoutGap='0% grid'>
-    <mat-card fxFlex="100%">
+    <mat-card fxFlex="100%" class="mat-card-sections-right">
         <mat-card-content>
-            <div fxFlex="100%" style="margin: 1%;">
+            <div fxFlex="100%" fxLayout="column" fxLayoutAlign="10px grid" style="margin: 1%; padding-inline: 10px;">
                 <!-- calc(100% - 10%) -->
-                <div fxLayout="row " fxLayoutAlign="spaces-between  start" fxLayoutGap="0px grid " style="height: 312px; position: relative;">
-                    <img fxFlex="70% " src="assets/img/img1.jpg " alt="1 " id="left-img">
+                <div fxLayout="row" fxLayoutAlign="spaces-between  start" fxLayoutGap="0px grid " style="height: 312px; position: relative;">
+                    <img fxFlex="70% " src="assets/img/excursion_las_terrazas_con_canopy_travelnet_cuba@1x.png" alt="1 " id="left-img">
                     <div fxFlex="30% " fxLayout="column " fxLayoutAlign="stretch stretch" fxLayoutGap="0px grid" style="height: 312px; width: 100%;">
-                        <img fxFlex="50% " src="assets/img/img1.jpg " alt="2 " class="img-class-top ">
+                        <img fxFlex="50% " src="assets/img/jardin_botanico_de_la_habana_tendra_su_canopy@1x.png" alt="2 " class="img-class-top ">
                         <div fxFlex="50% ">
-                            <img src="assets/img/img1.jpg " alt="3 " class="img-class-bottom ">
+                            <img src="assets/img/_14704_tour_canotaje_canopy_3@1x.png" alt="3 " class="img-class-bottom ">
                             <!-- <button style="background-color: #ffffff;
                             border-radius: 18px;
                             box-shadow: inset 3px 3px 6px rgba(0, 0, 0, .16);
@@ -37,113 +37,151 @@
                 </div>
 
                 <div id="initial-data">
-                    <p style="font-size: 10px;
+                    <div style="font-size: 8px;
                     font-weight: 500;
-                    letter-spacing: 1.5px;
+                    letter-spacing: 1.2px;
                     color: rgba(66,66,66,.87);">
-                        Circuito
-                    </p>
-                    <div fxLayout="row wrap">
-                        <h1 fxFlex="80%">Calor y Cafe</h1>
+                        CIRCUITO
+                </div>
+                    <div fxLayout="row">
+                        <h1 fxFlex="80%">Calor y café</h1>
                         <div fxFlex="20%">
                             <ngp-material-rating [value]="5"> </ngp-material-rating>
                         </div>
                     </div>
-                    <div fxLayout="row wrap " fxLayoutAlign="start center " fxLayoutGap="10px grid ">
-                        <div fxFlex="50% ">
-                            <div fxFlexLayout="row">
-                                <p fxFlex="30%" class="text-left">Tema principal: </p>
-                                <p fxFlex="70%" class="text-right">Ciudad, Arte y cultura</p>
-                            </div>
-                        </div>
+                    <div fxLayout="column" fxLayoutAlign="end" fxLayoutGap="0px">
+                        <div fxFlex="100%" fxLayout="row" fxLayoutAlign="space-between start">
+                            <div fxLayout="column">
+                                <div fxLayout="row">
+                                    <p class="text-left">Tema principal: </p>
+                                    <p class="text-right">Ciudad, Arte y cultura</p>
+                                </div>
 
-                        <div fxFlex="50% ">
-                            <div fxFlexLayout="row">
+                                <!-- Languages -->
+                                <div>
+                                    <div fxFlexLayout="row">
+                                        <div class="text-left">Idiomas: <b class="text-right">Ruso, Inglés, Español y Francés</b> </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div fxLayout="row">
                                 <p fxFlex="30%" class="text-left">Otros temas:</p>
                                 <p fxFlex="70%" class="text-right">Naturaleza, Entretenimiento, Comida</p>
                             </div>
                         </div>
-
-                        <div fxFlex="100% ">
-                            <div fxFlexLayout="row">
-                                <p class="text-left">Idiomas: <b class="text-right">Ruso, Inglés, Español y Francés</b> </p>
-                            </div>
-                        </div>
+                        
+                        
                         <!-- <div fxFlex="50% ">
 
-                </div> -->
-                        <div fxFlex="22% " class="special-text">
-                            EDAD MÍNIMA : 2 AÑOS
+                        </div> -->
+                        <div fxFlex="100" fxLayout="row" fxLayoutGap="15px grid">
+                            <div  class="special-text">
+                                <!-- fxFlex="22% " -->
+                                EDAD MÍNIMA : 2 AÑOS
 
-                        </div>
-                        <div fxFlex="68% " class="special-text">
-                            DURACIÓN: 15 DÍAS / 14 NOCHES
+                            </div>
+                            <div class="special-text">
+                                <!-- fxFlex="68% "  -->
+                                DURACIÓN: 15 DÍAS / 14 NOCHES
 
+                            </div>
+                            
                         </div>
+                        
                     </div>
                 </div>
-                <hr>
-                <div id="destiny ">
-                    <p class="text-top">
-                        Destinos
-                    </p>
-                    <p class="text-bottom">
-                        La Habana / Viñales / Guamá / Cienfuegos / Trinidad / Camagüey / Santiago de Cuba / Baracoa
-                    </p>
+
+                <div>
+                    <hr>
                 </div>
-                <hr>
+
+                <div id="destiny ">
+                    <div class="text-top">
+                        Destinos
+                    </div>
+                    <div class="text-bottom">
+                        La Habana / Viñales / Guamá / Cienfuegos / Trinidad / Camagüey / Santiago de Cuba / Baracoa
+                    </div>
+                </div>
+
+                <div>
+                    <hr>
+                </div>
+
                 <div id="what-to-do ">
-                    <p class="text-top">¿Qué haremos?</p>
-                    <p class="text-bottom">
+                    <div class="text-top">¿Qué haremos?</div>
+                    <div class="text-bottom">
                         orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation Lorem ipsum dolor sit amet, consectetuer adipiscing
                         elit, sed diam nonummy nibh euismod tincidunt utorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
                         nostrud exerci tation Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt utorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
                         dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt utorem ipsum dolor sit amet, consectetuer
                         adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.
-                    </p>
+                    </div>
                 </div>
 
-                <hr>
-                <div id="what-includes " fxLayout="column" style="position: relative;">
-                    <p class="text-top">¿Qué incluye?</p>
-                    <div fxLayout="row wrap " fxLayoutGap="10px grid">
-                        <mat-icon aria-hidden="false " aria-label="Example home icon " style="color: rgba(233, 30, 99, .5); width: 17px; height: 17px;">home</mat-icon>
-                        <p class="what-includes-text-top">Servicios Generales</p>
-                    </div>
-                    <div class="what-includes-text-bottom ">- Recorrido en autocar con guía en español y portugués, seguro básico de viaje y desayuno tipo buffet.</div>
+                <div>
+                    <hr>
+                </div>
 
-                    <div fxLayout="row wrap " fxLayoutGap="10px grid">
-                        <mat-icon aria-hidden="false " aria-label="Example home icon " style="color: rgba(233, 30, 99, .5); width: 17px; height: 17px;">home</mat-icon>
-                        <p class="what-includes-text-top">Transporte</p>
-                    </div>
-                    <div class="what-includes-text-bottom ">- Incluye traslado de llegada</div>
-                    <div class="what-includes-text-bottom ">- Barco por el Valle del Rhin, Por el lago Traunsee , Tronchetto / Plaza de San Marcos / Tronchetto</div>
-                    <div class="what-includes-text-bottom ">- Visita panorámica en: Madrid, Paris, Londres, Amsterdam, Bruselas, Viena, Venecia, Asis, Roma, Florencia, Barcelona</div>
+                <div id="what-includes " fxLayout="column" style="position: relative;" fxLayoutGap="0px">
+                    <div class="text-top">¿Qué incluye?</div>
 
+                    <div fxLayout="row" fxLayoutGap="10px grid">
+                        <div>
+                            <mat-icon aria-hidden="false " aria-label="Example home icon " style="color: rgba(233, 30, 99, .5); width: 17px; height: 17px; font-size: 18px;">home</mat-icon>
+                        </div>
+                        <div fxLayout="column">
+                            <div class="what-includes-text-top">Servicios Generales</div>
+                            <div class="what-includes-text-bottom ">- Recorrido en autocar con guía en español y portugués, seguro básico de viaje y desayuno tipo buffet.</div>
+                        </div>
+                    </div>
+<!-- 
+                    <div fxLayout="row wrap " fxLayoutGap="10px grid">
+                    </div> -->
+
+
+                    <div fxLayout="row" fxLayoutGap="10px grid">
+                        <div>
+                            <mat-icon style="color: rgba(233, 30, 99, .5); width: 17px; height: 17px; font-size: 18px;"> directions_bus</mat-icon>
+                        </div>
+<!-- <mat-icon aria-hidden="false " aria-label="Example home icon " style="color: rgba(233, 30, 99, .5); width: 17px; height: 17px;">home</mat-icon> -->
+                        <div fxLayout="column">
+                            <div class="what-includes-text-top">Transporte</div>
+                            <div class="what-includes-text-bottom">- Incluye traslado de llegada</div>
+                            <div class="what-includes-text-bottom">- Barco por el Valle del Rhin, Por el lago Traunsee , Tronchetto / Plaza de San Marcos / Tronchetto</div>
+                            <div class="what-includes-text-bottom">- Visita panorámica en: Madrid, Paris, Londres, Amsterdam, Bruselas, Viena, Venecia, Asis, Roma, Florencia, Barcelona</div>
+                        </div>
+
+                    </div>
+                    
                     <div fxLayoutAlign="end end">
                         <div fxLayoutAlign="center center" style="
                     
                         background-color: #ffffff;
                         border-radius: 18px;
                         box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.16);
-                        width: 108px;
-                        height: 36px;
+                        width: 90px;
+                        height: 28px;
                         overflow: hidden;">
-                            <label style="font-weight: 500;
-                        letter-spacing: 1.246px;
-                        color: #e91e63;">LEER MÁS</label>
+                            <div style="font-weight: 500;
+                        letter-spacing: 0.8px;
+                        color: #e91e63;">LEER MÁS</div>
                         </div>
                     </div>
                 </div>
 
-                <hr>
+                <div>
+                    <hr>
+                </div>
+
                 <div id="destiny ">
-                    <p class="text-top">
+                    <div class="text-top">
                         ¿Qué debes traer?
-                    </p>
-                    <p class="text-bottom">
+                    </div>
+                    <div class="text-bottom">
                         Ropa sport, repelente para mosquitos.
-                    </p>
+                    </div>
                 </div>
 
 

@@ -1,24 +1,27 @@
-<div fxLayoutGap="10px">
-    <div fxLayout="row nowrap" fxLayoutGap="20px grid" style="padding-right: 30px;">
-        <app-reservation-data-input></app-reservation-data-input>
-        <app-reservation-data-input></app-reservation-data-input>
-        <app-reservation-data-input></app-reservation-data-input>
+<div fxFlex="100%" fxLayout="column" fxLayoutGap="10px">
+    <div fxLayout="row" fxLayoutGap="10px grid">
+        <app-reservation-data-input fxFlex="33.3%"></app-reservation-data-input>
+        <app-reservation-data-input fxFlex="33.3%"></app-reservation-data-input>
+        <app-reservation-data-input fxFlex="33.3%" class="padding-right" ></app-reservation-data-input>
     </div>
 
-    <div fxLayout="row nowrap" fxLayoutGap="20px grid" style="padding-right: 30px;">
-        <app-reservation-data-input></app-reservation-data-input>
-        <app-reservation-data-input></app-reservation-data-input>
-        <app-reservation-number-small></app-reservation-number-small>
-        <app-reservation-number-medium></app-reservation-number-medium>
+    <div fxLayout="row" fxLayoutGap="10px grid">
+        <app-reservation-data-input fxFlex="33.3%"></app-reservation-data-input>
+        <app-reservation-data-input fxFlex="33.3%"></app-reservation-data-input>
+        <div fxFlex="33.3%" class="padding-right" fxLayoutGap="6px grid">
+            <app-reservation-number-small fxFlex="33.3%"></app-reservation-number-small>
+            <app-reservation-number-medium fxFlex="66.6%" class="padding-right"></app-reservation-number-medium>
+        </div>
+        
     </div>
 
-    <div style="border-radius: 23.5px;
+    <div fxFlex="100%" style="border-radius: 23.5px;
     border: 1px solid #bdbdbd;
     width: 95%;
     height: 98px;
     overflow: hidden;
     ">
-        <div fxLayout="column wrap" style="padding-left: 2%;">
+        <div fxLayout="column" style="padding-left: 2%;">
             <input matInput id="name" type="text" placeholder="Nota Adicional" value="" style="border: 0cm;">
         </div>
     </div>

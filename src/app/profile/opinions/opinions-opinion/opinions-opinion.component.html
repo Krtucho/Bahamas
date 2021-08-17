@@ -1,20 +1,19 @@
-<div fxLayout="row wrap" fxLayoutGap="10px grid">
+<div fxFlex="100%" fxLayout="row" fxLayoutAlign="start" fxLayoutGap="5px grid">
     <!-- Componentes -->
-    <!-- <div fxFLex="30% "> -->
-
-    <div fxFlex="40% " fxLayout="row wrap " fxLayoutAlign="start center " fxLayoutGap="20px  ">
+    <div fxFlex="30%" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="5px grid">
         <div style="
         border-radius: 50%;
-        width: 60px;
-        height: 60px;
-        overflow: hidden;"><img class=" resp-img " src="assets/img/img1.jpg " alt=" "></div>
+        overflow: hidden;"><img class=" resp-img " src="assets/img/descarga_1_@1x.png" alt=" "></div>
 
-        <div fxLayout="column wrap " fxLayoutGap="10px grid">
-            <div style="font-weight: 500;
-            letter-spacing: .252px;">Amy Stephani Smith</div>
-            <div fxLayout="row wrap" fxLayoutGap="5px grid">
+        <div fxFlex="grow" fxLayout="column" fxLayoutGap="10px grid">
+            <div style="
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: .352px;">Amy Stephani Smith</div>
+            <div fxLayout="column" fxLayoutGap="5px grid">
                 <ngp-material-rating [value]="5 "> </ngp-material-rating>
                 <p style="font-size: 10px;
+                font-size: 9px;
                 font-weight: 500;
                 letter-spacing: 1.5px;
                 color: rgba(0,0,0,.87);">MARZO 2020
@@ -22,12 +21,13 @@
             </div>
         </div>
     </div>
-    <!-- </div> -->
-    <div fxFlex="60% ">
-        <p style="letter-spacing: .252px;
-                        color: rgba(0,0,0,.87);">
+    <div fxFlex="70%" fxLayoutAlign="start">
+        <div style="
+            font-size:10px;
+            letter-spacing: .252px;
+            color: rgba(0,0,0,.87);">
             orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation Lorem ipsum dolor sit amet, consectetuer adipiscing
             elit, sed diam nonummy nibh euismod tincidunt ut
-        </p>
+        </div>
     </div>
 </div>

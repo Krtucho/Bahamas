@@ -40,33 +40,30 @@
         // max-height: 100px;
     }
     .text-left {
-        letter-spacing: .1px;
+        letter-spacing: .8px;
         color: #757575;
+        font-size: 11px;
     }
     .text-right {
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 600;
         letter-spacing: .496px;
         color: #757575;
     }
-    .special-text {
-        font-size: 10px;
-        font-weight: 500;
-        letter-spacing: 1.5px;
-        color: #e91e63;
-    }
+    
     .text-top {
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 700;
         letter-spacing: .496px;
         color: rgba(0, 0, 0, .87);
     }
     .text-bottom {
+        font-size: 11px;
         letter-spacing: .252px;
         color: rgba(0, 0, 0, .87);
     }
     .what-includes-text-top {
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 500;
         letter-spacing: .496px;
     }
@@ -74,7 +71,8 @@
         letter-spacing: .252px;
         color: #757575;
         // padding-left: 1%;
-        margin-left: 3%;
+        // margin-left: 3%;
+        font-size: 11px;
     }
 }
 
@@ -84,7 +82,8 @@
 }
 
 h1 {
-    font-size: 34px;
+    font-size: 26px;
     font-weight: 700;
     color: rgba(0, 0, 0, .87);
+    letter-spacing: .596px;
 }

@@ -1,6 +1,24 @@
-h2 {
-    font-size: 24px;
-    font-weight: 700;
-    letter-spacing: .168px;
+:host{
+    mat-card{
+        border-top-right-radius: 15px !important; 
+        border-top-left-radius: 0px !important;
+        border-bottom-left-radius: 15px !important;
+        border-bottom-right-radius: 0px !important;
+        padding: 0px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, .16) !important;
+        // box-shadow: ;
+        mat-card-content{
+            padding-top: 7px;
+        }
+    }
+    h2 {
+    font-size: 16px;
+    font-weight: 850;
+    letter-spacing: .468px;
     color: rgba(0, 0, 0, .87);
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin: 0;
+    line-height: 28px;
+    }
 }
