@@ -8,6 +8,7 @@ import { SwipperDatesModule } from './swipper-dates/swipper-dates.module';
 import { NgpMaterialRatingModule } from 'ngp-material-rating';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatButtonModule } from '@angular/material/button';
+import { ProfileOptionsSwiperListModule } from './profile-options-swiper-list/profile-options-swiper-list.module';
 // import { SwiperModule } from 'swiper/angular/swiper-angular';
 
 
@@ -22,7 +23,8 @@ import { MatButtonModule } from '@angular/material/button';
     NgpMaterialRatingModule,
     SwipperDatesModule,
     FlexLayoutModule,
-    MatButtonModule
+    MatButtonModule,
+    ProfileOptionsSwiperListModule
     // SwiperModule
   ],
   exports:[

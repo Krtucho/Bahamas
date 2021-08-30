@@ -1,15 +1,13 @@
-<div fxLayoutGap="30px grid">
-    <div style="font-size: 34px;
-    font-weight: 700;
-    color: rgba(0,0,0,.87);">
+<div fxFlex="100%" fxLayout="column" fxLayoutGap="5px">
+    <h1 fxFlex="100%">
         Detalles del Cliente
+    </h1>
+
+    <div fxFlex="100%">
+        <app-pays-client-details-info fxFlex="100%"></app-pays-client-details-info>
     </div>
 
-    <div>
-        <app-pays-client-details-info></app-pays-client-details-info>
-    </div>
-
-    <div>
-        <app-pays-client-details-edit></app-pays-client-details-edit>
+    <div fxFlex="100%">
+        <app-pays-client-details-edit fxFlex="100%"></app-pays-client-details-edit>
     </div>
 </div>

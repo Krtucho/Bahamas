@@ -1,18 +1,19 @@
 <app-toolbar></app-toolbar>
 <app-steps></app-steps>
 
-<div style="width: 96%; margin: 0 auto; max-width: 915px;">
+<!-- style="width: 96%; margin: 0 auto; max-width: 915px;" -->
+<div class="page-container" >
     <div fxFlex="100%" fxLayout="row" fxLayoutAlign="start" fxLayoutGap="15px grid">
-        <div fxFlex="71%" style="background-color: #ffffff;">
+        <div fxFlex="71%" fxLayout="column" style="background-color: #ffffff;">
             <!-- <mat-card>
                 <mat-card-content>
                     <div style="background-color: aquamarine;">Todos los componentes aqui</div>
                 </mat-card-content>
             </mat-card> -->
-            <app-info></app-info>
-            <app-options></app-options>
-            <app-opinions></app-opinions>
-            <app-offers></app-offers>
+            <app-info fxFlex="100%"></app-info>
+            <app-options fxFlex="100%"></app-options>
+            <app-opinions fxFlex="100%"></app-opinions>
+            <app-offers fxFlex="100%"></app-offers>
         </div>
         <div fxFlex="29%">
           <!-- style="padding-right: 0 !important; " -->

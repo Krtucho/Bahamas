@@ -1,136 +1,135 @@
-<div fxLayout="column" fxLayoutGap="50px" style="width: 96%; margin: 0 auto;">
-    <div fxLayout="row" fxLayoutAlign="space-between center" style="   background-color: #e91e63; height: 75px; ">
-        <!-- To do -->
-        <div style="font-size: 16px; font-weight: 700; letter-spacing: .496px; color: #ffffff; padding:2%;">RESERVAR DE PAQUETE DE VIAJES</div>
-        <mat-icon>close</mat-icon>
-    </div>
+<!-- style="width: 96%; margin: 0 auto;" -->
 
-    <div style="padding: 0% 1% 0% 1%;">
-        <h1 style="font-size: 34px;
-        font-weight: 700;
-        color: rgba(0,0,0,.87);">
+<div style="background-color: #e4e4e4; padding-top: 20px; padding-bottom: 20px;">
+    <div fxLayout="column" fxLayoutGap="20px" id="reservation-layout" class="page-container">
+        <div fxLayout="row" fxLayoutAlign="space-between center" style="background-color: #e91e63; height: 75px; border-top-left-radius: 10px; border-top-right-radius: 10px; padding-inline: 1%">
+            <!-- To do -->
+            <div style="font-size: 16px; font-weight: 700; letter-spacing: .496px; color: #ffffff;">RESERVAR DE PAQUETE DE VIAJES</div>
+            <mat-icon style="color: #ffffff">close</mat-icon>
+        </div>
+
+        <div style="padding-inline: 2%;">
+        <h1 >
             Cliente
         </h1>
 
-        <p style="letter-spacing: .252px;
-        color: rgba(0,0,0,.87);">
-            Debe introducir la información del titular de la reserva tal como aparece en la identificación emitida por su gobierno. Para que la reserva sea válida deben rellenarse todas las casillas.
+        <p>
+                Debe introducir la información del titular de la reserva tal como aparece en la identificación emitida por su gobierno. Para que la reserva sea válida deben rellenarse todas las casillas.
         </p>
+        </div>
 
-        <div fxLayout="column nowrap" style="padding: 0% 1% 0% 1%;" fxLayoutGap="15px grid">
-            <h2 style="font-size: 24px;
-            font-weight: 500;
-            letter-spacing: .168px;
-            margin-bottom: 0% !important;">
+        <div fxFlex="auto" fxLayout="column" fxLayoutGap="8px" style="padding-inline: 3%">
+            <h2 fxFlex="100%">
                 Información del Titular de la Reserva
-
             </h2>
 
-            <!-- Fila de componentes -->
-            <div fxLayout="row wrap" fxLayoutGap="20px grid">
-                <app-reservation-data-input></app-reservation-data-input>
-                <app-reservation-data-input></app-reservation-data-input>
-                <app-reservation-data-input></app-reservation-data-input>
+            <div fxFlex="100%" fxLayout="column" fxLayoutGap="8px" style="padding-left: 0.2%; padding-right: 2%;">
+                <!-- Fila de componentes -->
+                <div fxFlex="100%" fxLayout="row" fxLayoutGap="10px grid">
+                    <app-reservation-data-input fxFlex="33.3%"></app-reservation-data-input>
+                    <app-reservation-data-input fxFlex="33.3%"></app-reservation-data-input>
+                    <app-reservation-data-input fxFlex="33.3%"></app-reservation-data-input>
+                </div>
+
+                <div fxFlex="100%" fxLayout="row" fxLayoutGap="10px grid">
+                    <app-reservation-data-input fxFlex="33.3%"></app-reservation-data-input>
+                    <app-reservation-data-input fxFlex="33.3%"></app-reservation-data-input>
+                </div>
             </div>
 
-            <div fxLayout="row wrap" fxLayoutGap="20px grid">
-                <app-reservation-data-input></app-reservation-data-input>
-                <app-reservation-data-input></app-reservation-data-input>
-            </div>
-
-            <div>
+            <div fxFlex="100%">
                 <hr>
             </div>
 
             <!-- Place -->
-            <div fxLayout="row wrap" fxLayoutAlign=" center" fxLayoutGap="20px">
-                <app-reservation-data-input></app-reservation-data-input>
-                <app-reservation-data-input></app-reservation-data-input>
+            <div fxFlex="100%" fxLayout="column" style="padding-left: 0.2%; padding-right: 2%;" class="padding-right-extra">
+                <div fxLayout="row" fxLayoutGap="10px" >
+                    <app-reservation-data-input fxFlex="33.3%" class="padding-right-extra"></app-reservation-data-input>
+                    <app-reservation-data-input fxFlex="33.3%" class="padding-right"></app-reservation-data-input>
+                </div>
             </div>
 
-            <div>
+            <div fxFLex="100%">
                 <hr>
             </div>
 
             <!-- Direction -->
-            <h2 style="font-size: 24px;
-            font-weight: 500;
-            letter-spacing: .168px;
-            margin-bottom: 0% !important;">
+            <h2 fxFlex="100%">
                 Dirección
 
             </h2>
 
-            <!-- Fila de componentes -->
-            <div fxLayout="row wrap" fxLayoutGap="20px grid">
-                <app-reservation-data-input></app-reservation-data-input>
-                <app-reservation-data-input></app-reservation-data-input>
-                <app-reservation-data-input></app-reservation-data-input>
+            <div fxFlex="100%" fxLayout="column" fxLayoutGap="8px" style="padding-left: 0.2%; padding-right: 2%;">
+                <!-- Fila de componentes -->
+                <div fxFlex="100%" fxLayout="row" fxLayoutGap="10px grid">
+                    <app-reservation-data-input fxFlex="33.3%"></app-reservation-data-input>
+                    <app-reservation-data-input fxFlex="33.3%"></app-reservation-data-input>
+                    <app-reservation-data-input fxFlex="33.3%"></app-reservation-data-input>
+                </div>
+
+                <div fxFlex="100%" fxLayout="row" fxLayoutGap="10px grid">
+                    <app-reservation-data-input fxFlex="33.3%"></app-reservation-data-input>
+                    <app-reservation-data-input fxFlex="33.3%"></app-reservation-data-input>
+                </div>
             </div>
 
-            <div fxLayout="row wrap" fxLayoutGap="20px grid">
-                <app-reservation-data-input></app-reservation-data-input>
-                <app-reservation-data-input></app-reservation-data-input>
-            </div>
-
-            <div>
+            <div fxFLex="100%">
                 <hr>
             </div>
 
-            <div fxLayout="row wrap" fxLayoutGap="20px grid">
-                <app-reservation-data-input></app-reservation-data-input>
-                <app-reservation-number-small></app-reservation-number-small>
-                <app-reservation-number-medium></app-reservation-number-medium>
+            <div fxFlex="100%" fxLayout="column" fxLayoutGap="8px" style="padding-left: 0.2%; padding-right: 2%;">
+                <div fxLayout="row" fxLayoutGap="10px grid">
+                    <app-reservation-data-input fxFlex="33.3%"></app-reservation-data-input>
+                    <div fxFlex="33.3%" fxLayout="row" fxLayoutGap="10px grid" class="padding-right-extra">
+                        <app-reservation-number-small fxFlex="33.3%"></app-reservation-number-small>
+                        <app-reservation-number-medium fxFlex="66.6%" class="padding-right"></app-reservation-number-medium>
+                    </div>
+                </div>
             </div>
 
-            <div>
+            <div fxFlex="100%">
                 <hr>
             </div>
 
-            <div fxLayout="row wrap" fxLayoutGap="20px grid">
-                <app-reservation-data-input></app-reservation-data-input>
-                <app-reservation-data-input></app-reservation-data-input>
-                <app-reservation-data-input></app-reservation-data-input>
+            <div fxFlex="100%" fxLayout="column" fxLayoutGap="8px" style="padding-left: 0.2%; padding-right: 2%;">
+                <div fxLayout="row" fxLayoutGap="10px grid">
+                    <app-reservation-data-input fxFlex="33.3%"></app-reservation-data-input>
+                    <app-reservation-data-input fxFlex="33.3%"></app-reservation-data-input>
+                    <app-reservation-data-input fxFlex="33.3%"></app-reservation-data-input>
+                </div>
             </div>
 
-            <div fxLayout="row wrap" fxLayoutGap="20px grid">
-                <app-reservation-data-input></app-reservation-data-input>
+            <div fxFlex="100%" fxLayout="row">
+                <app-reservation-data-input fxFlex="33.3%" class="padding-right-extra"></app-reservation-data-input>
             </div>
 
-            <div>
+            <div fxFlex="100%">
                 <hr>
             </div>
 
             <!-- Direction -->
-            <h2 style="font-size: 24px;
-            font-weight: 500;
-            letter-spacing: .168px;
-            margin-bottom: 0% !important;">
+            <h2 fxFlex="100%">
                 Contactos del Titular
-
             </h2>
 
             <!-- Fila de componentes -->
-            <div fxLayout="row wrap" fxLayoutGap="20px grid">
-                <app-reservation-data-input></app-reservation-data-input>
-                <app-reservation-data-input></app-reservation-data-input>
-                <app-reservation-number-small></app-reservation-number-small>
-                <app-reservation-number-medium></app-reservation-number-medium>
+            <div fxFlex="100%" fxLayout="row" fxLayoutGap="10px grid">
+                <app-reservation-data-input fxFlex="33.3%"></app-reservation-data-input>
+                <app-reservation-data-input fxFlex="33.3%"></app-reservation-data-input>
+                <div fxFlex="33.3%" fxLayoutGap="10px grid" class="padding-right-extra">
+                    <app-reservation-number-small fxFlex="33.3%"></app-reservation-number-small>
+                    <app-reservation-number-medium fxFlex="66.6%"></app-reservation-number-medium>
+                </div>
+                
             </div>
 
-            <div>
+            <div fxFlex="100%">
                 <hr>
             </div>
 
-            <div fxLayoutAlign="end center">
-                <div fxLayoutAlign="center center" style="background-color: #e91e63;
-                border-radius: 18px;
-                width: 133px;
-                height: 36px;
-                overflow: hidden;">
-                    <div style="font-weight: 500;
-                    letter-spacing: 1.246px;
-                    color: #ffffff;">
+            <div fxFlex="100%" fxLayout="row" fxLayoutAlign="end center" style="padding-bottom: 2%;">
+                <div fxLayout="row" fxLayoutAlign="center center" class="button-pay-outside">
+                    <div class="button-pay-inside">
                         PAGAR
                     </div>
                 </div>
@@ -150,5 +149,4 @@
             <!-- </div> -->
         </div>
     </div>
-
 </div>

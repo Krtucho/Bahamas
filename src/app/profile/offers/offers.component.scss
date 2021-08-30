@@ -3,17 +3,22 @@
     padding-right: 20%;
 }
 
-h1 {
-    font-size: 34px;
-    font-weight: 700;
-    color: rgba(0, 0, 0, .87);
-}
 
-h2 {
-    font-size: 24px;
-    font-weight: 700;
-    letter-spacing: .168px;
-    color: rgba(0, 0, 0, .87);
+
+
+
+:host{
+    h1 {
+        font-size: 34px;
+        font-weight: 700;
+        color: rgba(0, 0, 0, .87);
+    }
+    h2 {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    letter-spacing: .168px !important;
+    color: rgba(0, 0, 0, .87) !important;
+    }
 }
 
 // ::ng-deep mat-card{
