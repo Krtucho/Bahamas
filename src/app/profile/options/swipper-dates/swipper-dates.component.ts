@@ -11,23 +11,30 @@ SwiperCore.use([Navigation]);
 
 @Component({
   selector: 'app-swipper-dates',
-  template: `<swiper [navigation]="false" [freeMode]="true">
-  <ng-template swiperSlide>
-    <div style="background-color: grey; color: white; padding: 20px">Slide 1</div>
-  </ng-template>
-
-  <ng-template swiperSlide>
-    <div style="background-color: grey; color: white; padding: 20px">Slide 1</div>
-  </ng-template>
-
-  <ng-template swiperSlide>
-    <div style="background-color: grey; color: white; padding: 20px">Slide 1</div>
-  </ng-template>
-
-  <ng-template swiperSlide>
-    <div style="background-color: grey; color: white; padding: 20px">Slide 1</div>
-  </ng-template>
+  template: `
   
+  <swiper [navigation]="false" [freeMode]="true">
+  <!-- <ng-template>
+    <div class="swiper-button-next">Next</div>
+</ng-template>   -->
+    
+
+  <ng-template swiperSlide class="dates-container" style="max-width: 150px;">
+    <app-profile-options-swiper-dates-bdate   ></app-profile-options-swiper-dates-bdate>
+  </ng-template>
+  <ng-template swiperSlide class="dates-container" style="max-width: 150px;">
+    <app-profile-options-swiper-dates-bdate   ></app-profile-options-swiper-dates-bdate>
+  </ng-template>
+  <ng-template swiperSlide class="dates-container" style="max-width: 150px;">
+    <app-profile-options-swiper-dates-bdate   ></app-profile-options-swiper-dates-bdate>
+  </ng-template>
+  <ng-template swiperSlide class="dates-container" style="max-width: 150px;">
+    <app-profile-options-swiper-dates-bdate   ></app-profile-options-swiper-dates-bdate>
+  </ng-template>
+  <ng-template swiperSlide class="dates-container" style="max-width: 150px;">
+    <app-profile-options-swiper-dates-bdate   ></app-profile-options-swiper-dates-bdate>
+  </ng-template>
+  <!-- <div class="swiper-button-prev">Prev</div> -->
 </swiper>`,
   //'./swipper-dates.component.html',
   styleUrls: ['./swipper-dates.component.scss'],

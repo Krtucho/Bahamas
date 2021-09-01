@@ -11,14 +11,14 @@ SwiperCore.use([Navigation]);
 @Component({
   selector: 'app-swipper-profile-options-option',
   template: `<swiper [navigation]="false" [freeMode]="true">
-  <ng-template swiperSlide>
-    <app-profile-options-option style="background-color: grey; color: white; paddong: 20px;"></app-profile-options-option>
+  <ng-template swiperSlide class="swiper-option-item">
+    <app-profile-options-option></app-profile-options-option>
   </ng-template>
-  <ng-template swiperSlide>
-    <app-profile-options-option style="background-color: grey; color: white; margin-left: 20px; max-width: 380px;" ></app-profile-options-option>
+  <ng-template swiperSlide class="swiper-option-item">
+    <app-profile-options-option></app-profile-options-option>
   </ng-template>
-  <ng-template swiperSlide>
-    <app-profile-options-option style="background-color: grey; color: white; margin-left: 20px; max-width: 380px;"></app-profile-options-option>
+  <ng-template swiperSlide class="swiper-option-item">
+    <app-profile-options-option></app-profile-options-option>
   </ng-template>
 </swiper>`,
   styleUrls: ['./swipper-profile-options-option.component.scss'],

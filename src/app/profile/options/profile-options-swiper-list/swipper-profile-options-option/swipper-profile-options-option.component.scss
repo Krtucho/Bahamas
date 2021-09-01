@@ -1,4 +1,12 @@
 .swiper-container {
-    // max-width: 100% !important;
-    // max-height: 100% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    margin: 1%;
+}
+
+.swiper-option-item{
+    // background-color: grey; 
+    color: white; 
+    max-width: 380px !important;
+    margin-right: 20px;
 }
