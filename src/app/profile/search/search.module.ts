@@ -6,11 +6,12 @@ import { SearchGroupsComponent } from './search-groups/search-groups.component';
 import { MatIconModule } from '@angular/material/icon';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SearchGroupsModule } from './search-groups/search-groups.module';
+import { ProfileSearchSubtotalComponent } from './profile-search-subtotal/profile-search-subtotal.component';
 
 
 
 @NgModule({
-  declarations: [SearchComponent],
+  declarations: [SearchComponent, ProfileSearchSubtotalComponent],
   imports: [
     CommonModule,
     MatCardModule,

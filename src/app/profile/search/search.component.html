@@ -21,7 +21,7 @@
                 overflow: hidden;
                 padding-left:10px;
                 ">
-                        <div fxFlex="75%" fxLayout="column" fxLayoutAlign="center">
+                        <div fxFlex="75%" fxLayout="column" fxLayoutAlign="center" style="margin-left: 2%;">
                             <div fxFlex="100%" style="
                         font-size: 12px;
                         font-weight: 700;
@@ -113,47 +113,31 @@
                 </div>
 
 
-                <app-search-groups></app-search-groups>
+                <app-search-groups fxFlex="100%"></app-search-groups>
 
-                <div fxFlex="100% ">
+                <div fxFlex="100%">
                     <hr>
                 </div>
-                <app-search-groups></app-search-groups>
+                <app-search-groups fxFlex="100%"></app-search-groups>
 
-                <div fxFlex="100% ">
+                <div fxFlex="100%">
                     <hr>
                 </div>
 
-                <div fxFlex="100%" fxLayout="row" fxLayoutAlign="space-between center">
-                    <div class="sub-total-left">
-                        Subtotal:
-                    </div>
-
-                    <div class="li-right">
-                        $ 500
-                    </div>
-                </div>
-
-                <div fxFlex="100%" fxLayout="row" fxLayoutAlign="space-between center" >
-                    <div class="sub-total-left">
-                        Cargos por Reservación:
-                    </div>
-
-                    <div class="li-right">
-                        $ 50
-                    </div>
-                </div>
-
-                <div fxLayout="column" fxLayoutGap="0px" style="
-                border-top-left-radius: 10%;
-                border-bottom-right-radius: 10%;
+                <app-profile-search-subtotal fxFlex="100%"></app-profile-search-subtotal>
+                
+                <div fxFlex="100%" fxLayout="column" fxLayoutGap="0px" style="
+                border-top-left-radius: 15%;
+                border-bottom-right-radius: 15%;
                 color: #ffffff;
                 border: 1px solid #e91e63;
-                height: 100px;;
+                min-height: 130px !important;
                 width: auto;
                 padding-inline: 6%;
+                padding-top: 2%;
+                padding-bottom: 2%;
                 ">
-                    <div fxFlex="100%" fxLayout="row" fxLayoutAlign="space-between end">
+                    <div fxFlex="100%" fxLayout="row" fxLayoutAlign="space-between">
                         <div style="
                         font-size: 12px;
                         font-weight: 700;
@@ -161,7 +145,7 @@
                         color: rgba(0,0,0,.87);
                         ">Total a pagar:</div>
                         <div style="
-                        font-size: 13px;
+                        font-size: 15px;
                         font-weight: 800;
                         letter-spacing: .16px;
                         color: #e91e63;">$ 4050</div>
@@ -175,12 +159,10 @@
                         Las tarifas se muestran en CUP
                     </div>
 
-                    <div fxLayout="row" fxLayoutAlign="end center">
-                        <div fxlayout="row" fxLayoutAlign="center center" class="button-pay-outside"
-                        >
+                    <div fxFlex="100%" fxLayout="row" fxLayoutAlign="end center">
+                        <div fxlayout="row" fxLayoutAlign="center center" class="button-pay-outside">
                             <div class="button-pay-inside">PAGAR</div>
                         </div>
-
                     </div>
                 </div>
 
