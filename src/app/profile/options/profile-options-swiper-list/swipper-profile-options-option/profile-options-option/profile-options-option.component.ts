@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-profile-options-option',
@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile-options-option.component.scss']
 })
 export class ProfileOptionsOptionComponent implements OnInit {
-
+  // Input() swap: boolean;
+  
+  @Input() panelOpenState: boolean;
+  
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSwapExpanded(){
+
   }
 
 }

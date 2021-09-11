@@ -4,3 +4,8 @@
     letter-spacing: .144px;
     color: rgba(0, 0, 0, .87);
 }
+
+.groups-container{
+    max-height: 192px !important; 
+    overflow: auto !important;
+}

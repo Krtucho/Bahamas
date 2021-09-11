@@ -73,6 +73,29 @@
         // padding-left: 1%;
         // margin-left: 3%;
         font-size: 11px;
+        font-size: .8em;
+    }
+
+    .button-more-pics{
+        position: absolute;
+        bottom: 10px;
+        right: 16px;
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, .16);
+        // border: 1px solid darkgrey;
+        // padding: 3px 0px;
+        padding: 1% 2% !important;
+        overflow: hidden;
+        text-transform: uppercase;
+        font-size: .8em;
+        width: auto;
+        height: auto;
+        font-weight: 500;
+letter-spacing: 1.246px;
+
+        .button-letters{
+            line-height: 15px;
+            letter-spacing: 1.946px !important;
+        }
     }
 }
 

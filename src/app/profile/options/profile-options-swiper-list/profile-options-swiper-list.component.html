@@ -5,18 +5,26 @@
                     <div fxFlex="auto" fxLayout="row">
                         <div class="options-text-top">Opción 1</div>
                     </div>
-                    <div fxFlex="auto" fxLayout="row" fxLayoutAlign="end">
+                    <div fxFlex="auto" fxLayout="row" fxLayoutAlign="end" fxLayoutGap="10px grid" >
                         <div style="font-size: 12px; letter-spacing: .252px; color: #707070;">
                             Ver mas detalles
                         </div>
-                        <div mat-icon-button style="height:auto; width:auto; color: #707070;"aria-label="Example icon button with a vertical three dot icon ">
-                            <mat-icon> expand_more</mat-icon>
-                        </div>
+                        <a (click)="onExpandSwap()" mat-icon-button class="expand-icon" aria-label="Example icon button with a vertical three dot icon ">
+                            <!-- <div > -->
+                                <mat-icon *ngIf="expanded; else noExpanded" style="font-size: 21px;"> expand_more</mat-icon>
+                            <!-- </div> -->
+                            <ng-template #noExpanded>
+                                <mat-icon style="font-size: 21px;"> expand_less</mat-icon>
+                            </ng-template>
+                            
+                            <!-- <mat-icon *ng-if="!expanded"> expand_less</mat-icon> -->
+                            <!-- expand_less -->
+                        </a>
                     </div>
                 </div>
 
                 <!-- Dias -->
-                <div fxFlex="100%" fxLayout="column">
+                <!-- <div fxFlex="100%" fxLayout="column">
                     <mat-horizontal-stepper #stepper>
                         <mat-step label="Dia 1 ">
                         </mat-step>
@@ -25,11 +33,12 @@
                         <mat-step label="Dia 3 ">
                         </mat-step>
                     </mat-horizontal-stepper>
-                </div>
+                </div> -->
                  
 
                 <!-- Componentes de opciones -->
-                <app-swipper-profile-options-option fxFlex="100%" style="display: grid; position: relative;"></app-swipper-profile-options-option>
+                <app-swipper-profile-options-option fxFlex="100%" style="display: grid; position: relative;" 
+                [isExpended]="expanded"></app-swipper-profile-options-option>
                 <!-- Componentes de opciones -->
 
                 <div fxFlex="100%" fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="10px">

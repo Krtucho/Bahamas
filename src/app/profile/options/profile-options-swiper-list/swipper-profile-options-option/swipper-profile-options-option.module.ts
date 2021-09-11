@@ -9,10 +9,12 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatStepperModule } from '@angular/material/stepper';
 import { NgpMaterialRatingModule } from 'ngp-material-rating';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
-    SwipperProfileOptionsOptionComponent,ProfileOptionsOptionComponent
+    SwipperProfileOptionsOptionComponent,
+    ProfileOptionsOptionComponent
   ],
   imports: [
     CommonModule,
@@ -22,10 +24,12 @@ import { NgpMaterialRatingModule } from 'ngp-material-rating';
     MatIconModule,
     MatCardModule,
     MatStepperModule,
-    NgpMaterialRatingModule
+    NgpMaterialRatingModule,
+    MatExpansionModule
   ],
   exports: [
-    SwipperProfileOptionsOptionComponent
+    SwipperProfileOptionsOptionComponent, 
+    ProfileOptionsOptionComponent
   ]
 })
 export class SwipperProfileOptionsOptionModule { }

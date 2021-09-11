@@ -5,8 +5,11 @@ import { SwiperModule } from "swiper/angular";
 import { ProfileOptionsSwiperDatesBdateComponent } from './profile-options-swiper-dates-bdate/profile-options-swiper-dates-bdate.component';
 import { ProfileOptionsSwiperDatesBldateComponent } from './profile-options-swiper-dates-bldate/profile-options-swiper-dates-bldate.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
-
-
+import {MatTabsModule} from '@angular/material/tabs';
+import { MatIconModule } from '@angular/material/icon';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { MatInputModule } from '@angular/material/input';
 
 
 @NgModule({
@@ -14,7 +17,12 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   imports: [
     CommonModule,
     SwiperModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatTabsModule,
+    MatIconModule,
+    MatFormFieldModule,
+    MatCheckboxModule,
+    MatInputModule
   ],
   exports:[SwipperDatesComponent]
 })

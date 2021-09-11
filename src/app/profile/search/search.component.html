@@ -1,7 +1,13 @@
 <!-- Right Column -->
-<div style="position: sticky; top: 0; color: #ffffff; height: 811px;">
+<div style="
+position: sticky;
+top: 0;
+color: #ffffff;
+
+">
     <!-- width: 343px; -->
-    <mat-card>
+    <mat-card style="    overflow: auto;
+    max-height: 600px;">
         <mat-card-content style="width: 100%;; padding: 0%;">
             <div fxLayout="column" fxLayoutGap="0px">
                 <!-- fxLayoutAlign="center stretch" -->
@@ -43,7 +49,7 @@
                         overflow: hidden;">
                         <mat-icon style="color: #e91e63;">search</mat-icon>
                             </div>
-                            
+
                         </div>
                     </div>
 
@@ -55,7 +61,7 @@
                     </div>
 
                     <div fxFlex="100%" fxLayout="row" fxLayoutAlign="start center ">
-                        
+
                         <div fxLayout="row" fxLayoutAlign="space-between">
 
                             <!-- Left -->
@@ -112,20 +118,29 @@
                     <hr>
                 </div>
 
+                <div fxFlex="100%" class="groups-container" fxLayout="column">
+                    <app-search-groups fxFlex="100%"></app-search-groups>
 
-                <app-search-groups fxFlex="100%"></app-search-groups>
+                    <div fxFlex="100%">
+                        <hr>
+                    </div>
+                    <app-search-groups fxFlex="100%"></app-search-groups>
 
-                <div fxFlex="100%">
-                    <hr>
+                    <div fxFlex="100%">
+                        <hr>
+                    </div>
+
+                    <!-- <app-search-groups fxFlex="100%"></app-search-groups>
+
+                    <div fxFlex="100%">
+                        <hr>
+                    </div> -->
                 </div>
-                <app-search-groups fxFlex="100%"></app-search-groups>
 
-                <div fxFlex="100%">
-                    <hr>
-                </div>
+                
 
                 <app-profile-search-subtotal fxFlex="100%"></app-profile-search-subtotal>
-                
+
                 <div fxFlex="100%" fxLayout="column" fxLayoutGap="0px" style="
                 border-top-left-radius: 15%;
                 border-bottom-right-radius: 15%;

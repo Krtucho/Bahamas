@@ -9,6 +9,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { ProfileModule } from './profile/profile.module';
 import { ReservationModule } from './reservation/reservation.module';
 import { PaysModule } from './pays/pays.module';
+import { RouterModule, Routes } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { PaysModule } from './pays/pays.module';
     
     ProfileModule, // Profile
     ReservationModule, // Reservation
-    PaysModule // Pays
+    PaysModule // Pays,
   ],
   providers: [],
   bootstrap: [AppComponent]
