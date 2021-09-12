@@ -52,3 +52,16 @@
     margin-top: 8px;
     margin-right: 8px;
   }
+
+  .mat-tab-group {
+    margin-bottom: 48px;
+  }
+
+// :host{
+  .mat-tab-header-pagination{
+    .mat-tab-header-pagination-chevron{
+        height: 16px;
+        border-width: 2px 0px 0 0;
+    }
+  }
+// }

@@ -10,10 +10,16 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { MatInputModule } from '@angular/material/input';
+import { ProfileOptionsSwiperListModule } from '../profile-options-swiper-list/profile-options-swiper-list.module';
+// import { ProfileOptionsSwiperListComponent } from '../profile-options-swiper-list/profile-options-swiper-list.component';
 
 
 @NgModule({
-  declarations: [SwipperDatesComponent, ProfileOptionsSwiperDatesBdateComponent, ProfileOptionsSwiperDatesBldateComponent],
+  declarations: [
+    SwipperDatesComponent, 
+    ProfileOptionsSwiperDatesBdateComponent, 
+    ProfileOptionsSwiperDatesBldateComponent,
+    ],
   imports: [
     CommonModule,
     SwiperModule,
@@ -22,7 +28,8 @@ import { MatInputModule } from '@angular/material/input';
     MatIconModule,
     MatFormFieldModule,
     MatCheckboxModule,
-    MatInputModule
+    MatInputModule,
+    ProfileOptionsSwiperListModule
   ],
   exports:[SwipperDatesComponent]
 })

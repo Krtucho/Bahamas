@@ -23,13 +23,59 @@
 
   <!-- #enddocregion mat-tab-nav -->
 
-  <div fxFlex="100%" fxLayout="column">
+  <mat-tab-group fxFlex="100%">
+    <mat-tab>
+      <ng-template mat-tab-label class="dates-container" style="max-width: 150px;">
+        <app-profile-options-swiper-dates-bdate></app-profile-options-swiper-dates-bdate>
+      </ng-template>
+
+      <!-- <div> -->
+        <app-profile-options-swiper-list style="margin: 10px;"></app-profile-options-swiper-list>
+        <app-profile-options-swiper-list style="margin: 10px;"></app-profile-options-swiper-list>
+      <!-- </div> -->
+    </mat-tab>
+  
+    <mat-tab>
+      <ng-template mat-tab-label class="dates-container" style="max-width: 150px;">
+        <app-profile-options-swiper-dates-bdate></app-profile-options-swiper-dates-bdate>
+      </ng-template>
+
+      <!-- <div> -->
+        <app-profile-options-swiper-list style="margin: 10px;"></app-profile-options-swiper-list>
+        <app-profile-options-swiper-list style="margin: 10px;"></app-profile-options-swiper-list>
+      <!-- </div> -->
+    </mat-tab>
+  
+    <mat-tab>
+      <ng-template mat-tab-label class="dates-container" style="max-width: 150px;">
+        <app-profile-options-swiper-dates-bdate></app-profile-options-swiper-dates-bdate>
+      </ng-template>
+
+      <!-- <div> -->
+        <app-profile-options-swiper-list style="margin: 10px;"></app-profile-options-swiper-list>
+        <app-profile-options-swiper-list style="margin: 10px;"></app-profile-options-swiper-list>
+      <!-- </div> -->
+    </mat-tab>
+
+    <mat-tab>
+      <ng-template mat-tab-label class="dates-container" style="max-width: 150px;">
+        <app-profile-options-swiper-dates-bdate></app-profile-options-swiper-dates-bdate>
+      </ng-template>
+
+      <!-- <div> -->
+        <app-profile-options-swiper-list style="margin: 10px;"></app-profile-options-swiper-list>
+        <app-profile-options-swiper-list style="margin: 10px;"></app-profile-options-swiper-list>
+      <!-- </div> -->
+    </mat-tab>
+  </mat-tab-group>
+
+  <!-- <div fxFlex="100%" fxLayout="column">
   <mat-form-field fxFlex="100%">
     <mat-label>Selected tab index</mat-label>
     <input matInput type="number" >
-  </mat-form-field>
+  </mat-form-field> -->
   <!-- [formControl]="selected" -->
-  <div fxFlex="100%">
+  <!-- <div fxFlex="100%">
     <button mat-raised-button
             class="example-add-tab-button"
             (click)="addTab(selectAfterAdding.checked)">
@@ -51,4 +97,4 @@
       </button>
     </mat-tab>
   </mat-tab-group>
-</div>
+</div> -->
