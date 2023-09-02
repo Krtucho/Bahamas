@@ -1,7 +1,9 @@
-# MyApp
+# Bahamas
 
-## Repo Url:
-https://carmine-scarab-cuff.cyclic.app/
+## Frontend layout of a website in Angular using Angular Material and Angular Flex-Layout
+
+## Repo Url
+[Bahamas](https://carmine-scarab-cuff.cyclic.app/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.13.
 
